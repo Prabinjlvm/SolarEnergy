@@ -5916,6 +5916,9 @@ body .ui-tooltip {
   margin-right: 27px;
   border-right: 1px solid #D9D9D9;
 }
+.it-header-area {
+  background-color:  var(--it-common-black); /* Example dark color */
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .it-header-top-contact-wrap ul li:not(:last-child) {
     padding-right: 30px;
@@ -6172,7 +6175,7 @@ body .ui-tooltip {
 }
 .it-header-menu > nav > ul > li > a {
   font-weight: 600;
-  font-size: 16px !important;
+  font-size: 18px ;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   padding: 30.5px 0;
@@ -6185,6 +6188,7 @@ body .ui-tooltip {
     font-size: 13px;
   }
 }
+
 .it-header-menu > nav > ul > li > a::before {
   content: "";
   position: absolute;
@@ -8048,6 +8052,10 @@ body .ui-tooltip {
     padding: 30px 30px;
   }
 }
+.it-header-spacing {
+  /* Set the height of your header here. You might need to adjust this value. */
+  height: 79px; 
+}
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .it-service-style-2 .it-service-item {
     padding: 30px 20px;
@@ -8083,6 +8091,15 @@ body .ui-tooltip {
 }
 .it-service-style-2 .it-service-item:hover .it-btn-theme.black-bg svg, .it-service-style-2 .it-service-item:hover .it-btn-theme.black-bg i {
   color: var(--it-common-black);
+}
+.it-btn-theme span {
+  /* This targets both the 'text-1' and 'text-2' spans */
+  font-size: 14px; /* Adjust this value to make the text smaller */
+}
+
+.it-btn-theme > span {
+  /* This prevents the entire span container from wrapping */
+  white-space: nowrap;
 }
 .it-service-style-2 .it-service-item:hover p {
   color: var(--it-common-white);
@@ -15514,7 +15531,9 @@ input[type=radio] {
 
 .it-cta-2-wrap {
   padding: 39px 75px;
-  margin-bottom: -75px;
+  margin-bottom: 0;       /* remove negative margin */
+  position: relative;
+  overflow: hidden;       /* prevent children (shape) from overflowing */
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .it-cta-2-wrap {
@@ -15526,11 +15545,12 @@ input[type=radio] {
     font-size: 24px;
   }
 }
+
 .it-cta-2-shape {
-  position: absolute;
+  max-width: 100%;        /* keep image inside container */
+  height: auto;
   left: 0;
   bottom: 0;
-  z-index: -1;
 }
 @media (max-width: 767px) {
   .it-cta-2-btn {
@@ -17335,4 +17355,7 @@ input[type=radio] {
     margin-bottom: 0;
   }
 }
+
+
+
 
