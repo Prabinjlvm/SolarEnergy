@@ -10,53 +10,61 @@ const Header = () => {
       <div className="container container-1650">
         <div className="p-relative">
           <div className="row align-items-center">
+            {/* Logo */}
             <div className="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-6">
               <div className="it-header-logo">
                 <Link to="/">
-                  <img src="assets/img/logo/logo-white3.png" alt="" />
+                  <img src="assets/img/logo/logo-white3.png" alt="logo" />
                 </Link>
               </div>
               <div className="it-header-logo-3 d-none">
                 <Link to="/">
-                  <img src="assets/img/logo/logo-black.png" alt="" />
+                  <img src="assets/img/logo/logo-black.png" alt="logo" />
                 </Link>
               </div>
             </div>
-            <div className="col-xxl-7 col-xl-8">
+
+            {/* Desktop Menu */}
+            <div className="col-xxl-7 col-xl-8 d-none d-xl-block">
               <div className="it-header-menu it-header-dropdown">
                 <nav className="it-menu-content">
                   <ul>
                     <li className=" p-static">
                       <Link to="/">Home</Link>
                     </li>
+
+                    {/* More Menu Items */}
                     <li className="has-dropdown">
-                      <Link to="/">About Us</Link>
+                      <Link to="/about-us">About</Link>
                       <ul className="it-submenu submenu">
                         <li>
-                          <Link to="/">About Us V1</Link>
+                          <Link to="/">About Us</Link>
                         </li>
                         <li>
-                          <Link to="/">About Us V2</Link>
+                          <Link to="/">Vision & Mission</Link>
+                        </li>
+                        <li>
+                          <Link to="/">Our Team</Link>
                         </li>
                       </ul>
                     </li>
+
+                    <li className="">
+                      <Link to="/">Leadership</Link>
+                    </li>
+
                     <li className="has-dropdown">
-                      <Link to="/">Services</Link>
+                      <Link to="/">Our Site</Link>
                       <ul className="it-submenu submenu">
                         <li>
-                          <Link to="/">Service 01</Link>
+                          <Link to="/">On-Site</Link>
                         </li>
                         <li>
-                          <Link to="/">Service 02</Link>
-                        </li>
-                        <li>
-                          <Link to="/">Service details</Link>
-                        </li>
-                        <li>
-                          <Link to="/">Service No Sidebar</Link>
+                          <Link to="/">Off-Site</Link>
                         </li>
                       </ul>
                     </li>
+
                     <li className="has-dropdown">
                       <Link to="/">Project</Link>
                       <ul className="it-submenu submenu">
@@ -68,33 +76,22 @@ const Header = () => {
                         </li>
                       </ul>
                     </li>
-                    <li className="has-dropdown">
-                      <Link to="/">Blog</Link>
-                      <ul className="it-submenu submenu">
-                        <li>
-                          <Link to="/">Blog</Link>
-                        </li>
-                        <li>
-                          <Link to="/">Blog Sidebar</Link>
-                        </li>
-                        <li>
-                          <Link to="/">Blog Details</Link>
-                        </li>
-                        <li>
-                          <Link to="/">Blog No Sidebar</Link>
-                        </li>
-                      </ul>
+                    <li className="">
+                      <Link to="/careers">Careers</Link>
                     </li>
                     <li>
-                      <Link to="/">Contact</Link>
+                      <Link to="/contact">Contact</Link>
                     </li>
                   </ul>
                 </nav>
               </div>
             </div>
+
+            {/* Right Side */}
             <div className="col-xxl-3 col-xl-2 col-lg-6 col-md-6 col-6">
               <div className="it-header-right-action d-flex justify-content-end align-items-center">
-                <div className="it-header-search">
+                {/* Search */}
+                <div className="it-header-search d-none d-xxl-block">
                   <button className="search-box-outer">
                     <svg
                       width="19"
@@ -110,12 +107,16 @@ const Header = () => {
                     </svg>
                   </button>
                 </div>
-                <Link to="/" className="it-btn-theme">
+
+                {/* CTA Button */}
+                <Link to="/contact" className="it-btn-theme d-none d-md-flex">
                   <span>
                     <span className="text-1">Get a Free Call</span>
                     <span className="text-2">Get a Free Call</span>
                   </span>
                 </Link>
+
+                {/* Mobile Menu Toggle */}
                 <div className="it-header-bar d-xl-none">
                   <button className="it-menu-bar">
                     <span>
