@@ -1,4 +1,10 @@
 import React from "react";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from "react-icons/fa";
 
 const CopyrightArea = () => {
   return (
@@ -28,16 +34,24 @@ const CopyrightArea = () => {
                 <div className="it-copyright-social text-center text-sm-end">
                   {/* Social Icons */}
                   <a href="#">
-                    <i className="fab fa-x-twitter"></i>
+                    <i>
+                      <FaTwitter />
+                    </i>
                   </a>
                   <a href="#">
-                    <i className="fab fa-facebook-f"></i>
+                    <i>
+                      <FaFacebookF />
+                    </i>
                   </a>
                   <a href="#">
-                    <i className="fab fa-instagram"></i>
+                    <i>
+                      <FaInstagram />
+                    </i>
                   </a>
                   <a href="#">
-                    <i className="fab fa-linkedin-in"></i>
+                    <i>
+                      <FaLinkedinIn />
+                    </i>
                   </a>
                 </div>
               </div>

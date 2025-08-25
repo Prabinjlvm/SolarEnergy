@@ -40,7 +40,7 @@ const Header = () => {
                         </li>
                       </ul>
                     </li>
-                    <li className="has-dropdown">
+                    {/* <li className="has-dropdown">
                       <a href="#">Pages</a>
                       <ul className="it-submenu submenu">
                         <li>
@@ -83,7 +83,7 @@ const Header = () => {
                           <a href="404.html">Error</a>
                         </li>
                       </ul>
-                    </li>
+                    </li> */}
                     <li className="has-dropdown">
                       <a href="service-v1.html">Services</a>
                       <ul className="it-submenu submenu">
@@ -110,7 +110,7 @@ const Header = () => {
                           <Link to="/project">Project</Link>
                         </li>
                         <li>
-                          <a href="project-details.html">Project Details</a>
+                          <Link to="/project-details">Project Details</Link>
                         </li>
                       </ul>
                     </li>

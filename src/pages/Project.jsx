@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../component/Header";
 import { Link } from "react-router-dom";
 import FooterArea from "../component/FooterArea";
-import CopyrightArea from "../component/CopyrightArea";
 import NewsletterArea from "../component/NewsletterArea";
 import MagicCursor from "../component/MagicCursor";
 import BackToTop from "../component/BackToTop";
@@ -85,10 +84,10 @@ const Project = () => {
                       <div>
                         <h4 className="it-project-2-title">
                           <Link className="border-line" to="/project-details">
-                            Smart wind Installations
+                            Smart Solar Installations
                           </Link>
                         </h4>
-                        <span>Solar Energy</span>
+                        <span>Renewable Energy</span>
                       </div>
                       <Link
                         to="/project-details"

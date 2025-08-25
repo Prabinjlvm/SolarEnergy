@@ -73,8 +73,8 @@ const WindEnergySlider = () => {
               <div className="it-slider-4-box it-slider-4-overlay p-relative">
                 <div className="it-slider-4-bg">
                   <img
-                    src={`${process.env.PUBLIC_URL}/assets/img/slider/slider-5-1.jpg`}
-                    alt=""
+                    src="assets/img/about/SolarHome-2.jpg"
+                    alt="Solar Home"
                   />
                 </div>
                 <span className="it-hero-experience">
@@ -301,8 +301,8 @@ const WindEnergySlider = () => {
               <div className="it-slider-4-box it-slider-4-overlay p-relative">
                 <div className="it-slider-4-bg">
                   <img
-                    src={`${process.env.PUBLIC_URL}/assets/img/slider/slider-5-2.jpg`}
-                    alt=""
+                    src="assets/img/about/SolarHome-3.jpg"
+                    alt="Solar Home"
                   />
                 </div>
                 <span className="it-hero-experience">

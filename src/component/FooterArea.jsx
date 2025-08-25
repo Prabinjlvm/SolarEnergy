@@ -28,9 +28,9 @@ const FooterArea = () => {
                 </div>
                 <div className="it-footer-widget-text">
                   <p>
-                    There are many variations of passages <br />
-                    of Lorem Ipsum available, but the majority <br />
-                    have suffered in some form, by injected
+                    Harness the power of the sun with our advanced <br />
+                    solar solutions. Sustainable, efficient, and <br />
+                    cost-effective energy for your home or business.
                   </p>
                 </div>
                 <div className="it-footer-widget-btn">

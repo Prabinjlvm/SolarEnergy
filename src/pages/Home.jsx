@@ -15,7 +15,6 @@ import BlogArea from "../component/BlogArea";
 import NewsletterArea from "../component/NewsletterArea";
 import FooterArea from "../component/FooterArea";
 import Header from "../component/Header";
-import CopyrightArea from "../component/CopyrightArea";
 import MagicCursor from "../component/MagicCursor";
 import BackToTop from "../component/BackToTop";
 import SearchPopup from "../component/SearchPopup";

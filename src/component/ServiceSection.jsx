@@ -45,7 +45,10 @@ const ServiceSection = () => {
             >
               <div className="it-service-4-item text-center mb-30">
                 <div className="it-service-4-thumb mb-40">
-                  <img src="assets/img/service/service-5-1.png" alt="" />
+                  <img
+                    src="assets/img/about/SolarHome-1.avif"
+                    alt="Solar Home"
+                  />
                 </div>
                 <div className="it-service-4-content">
                   <h5 className="it-service-4-title mb-20">
