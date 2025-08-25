@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FunFactArea = () => {
   return (
@@ -26,12 +27,12 @@ const FunFactArea = () => {
                   sustainable future.
                 </p>
               </div>
-              <a href="contact.html" className="it-btn-theme">
+              <Link to="/" className="it-btn-theme">
                 <span>
                   <span className="text-1">Get Clean Energy</span>
                   <span className="text-2">Get Clean Energy</span>
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
 

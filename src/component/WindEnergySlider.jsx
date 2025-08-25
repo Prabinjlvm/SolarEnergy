@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
+import { Link } from "react-router-dom";
 
 const WindEnergySlider = () => {
   useEffect(() => {
@@ -92,7 +93,7 @@ const WindEnergySlider = () => {
                   </b>
                 </span>
                 <div className="it-slider-4-social-box it-header-top-social-box">
-                  <a href="#">
+                  <Link to="/">
                     <svg
                       width="12"
                       height="16"
@@ -109,8 +110,8 @@ const WindEnergySlider = () => {
                         strokeLinejoin="round"
                       />
                     </svg>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="/">
                     <svg
                       width="14"
                       height="13"
@@ -125,8 +126,8 @@ const WindEnergySlider = () => {
                         fill="currentcolor"
                       />
                     </svg>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="/">
                     <svg
                       width="16"
                       height="16"
@@ -156,8 +157,8 @@ const WindEnergySlider = () => {
                         strokeLinejoin="round"
                       />
                     </svg>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="/">
                     <svg
                       width="15"
                       height="15"
@@ -178,7 +179,7 @@ const WindEnergySlider = () => {
                         fill="currentcolor"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
                 <div className="container container-1420">
                   <div className="row">
@@ -271,10 +272,7 @@ const WindEnergySlider = () => {
                                     </p>
                                   </div>
                                   <div className="it-slider-4-btn">
-                                    <a
-                                      href="about-us-v1.html"
-                                      className="it-btn-theme mr-30"
-                                    >
+                                    <Link to="/" className="it-btn-theme mr-30">
                                       <span>
                                         <span className="text-1">
                                           Learn How It Works
@@ -283,7 +281,7 @@ const WindEnergySlider = () => {
                                           Learn How It Works
                                         </span>
                                       </span>
-                                    </a>
+                                    </Link>
                                   </div>
                                 </div>
                               </div>
@@ -320,7 +318,7 @@ const WindEnergySlider = () => {
                   </b>
                 </span>
                 <div className="it-slider-4-social-box it-header-top-social-box">
-                  <a href="#">
+                  <Link to="/">
                     <svg
                       width="12"
                       height="16"
@@ -337,8 +335,8 @@ const WindEnergySlider = () => {
                         strokeLinejoin="round"
                       />
                     </svg>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="/">
                     <svg
                       width="14"
                       height="13"
@@ -353,8 +351,8 @@ const WindEnergySlider = () => {
                         fill="currentcolor"
                       />
                     </svg>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="/">
                     <svg
                       width="16"
                       height="16"
@@ -384,8 +382,8 @@ const WindEnergySlider = () => {
                         strokeLinejoin="round"
                       />
                     </svg>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="/">
                     <svg
                       width="15"
                       height="15"
@@ -406,7 +404,7 @@ const WindEnergySlider = () => {
                         fill="currentcolor"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
                 <div className="container container-1420">
                   <div className="row">
@@ -499,10 +497,7 @@ const WindEnergySlider = () => {
                                     </p>
                                   </div>
                                   <div className="it-slider-4-btn">
-                                    <a
-                                      href="about-us-v1.html"
-                                      className="it-btn-theme mr-30"
-                                    >
+                                    <Link to="/" className="it-btn-theme mr-30">
                                       <span>
                                         <span className="text-1">
                                           Learn How It Works
@@ -511,7 +506,7 @@ const WindEnergySlider = () => {
                                           Learn How It Works
                                         </span>
                                       </span>
-                                    </a>
+                                    </Link>
                                   </div>
                                 </div>
                               </div>
@@ -548,7 +543,7 @@ const WindEnergySlider = () => {
                   </b>
                 </span>
                 <div className="it-slider-4-social-box it-header-top-social-box">
-                  <a href="#">
+                  <Link to="/">
                     <svg
                       width="12"
                       height="16"
@@ -565,8 +560,8 @@ const WindEnergySlider = () => {
                         strokeLinejoin="round"
                       />
                     </svg>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="/">
                     <svg
                       width="14"
                       height="13"
@@ -581,8 +576,8 @@ const WindEnergySlider = () => {
                         fill="currentcolor"
                       />
                     </svg>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="/">
                     <svg
                       width="16"
                       height="16"
@@ -612,8 +607,8 @@ const WindEnergySlider = () => {
                         strokeLinejoin="round"
                       />
                     </svg>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="/">
                     <svg
                       width="15"
                       height="15"
@@ -634,7 +629,7 @@ const WindEnergySlider = () => {
                         fill="currentcolor"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
                 <div className="container container-1420">
                   <div className="row">
@@ -727,10 +722,7 @@ const WindEnergySlider = () => {
                                     </p>
                                   </div>
                                   <div className="it-slider-4-btn">
-                                    <a
-                                      href="about-us-v1.html"
-                                      className="it-btn-theme mr-30"
-                                    >
+                                    <Link to="/" className="it-btn-theme mr-30">
                                       <span>
                                         <span className="text-1">
                                           Learn How It Works
@@ -739,7 +731,7 @@ const WindEnergySlider = () => {
                                           Learn How It Works
                                         </span>
                                       </span>
-                                    </a>
+                                    </Link>
                                   </div>
                                 </div>
                               </div>

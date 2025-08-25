@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProjectArea = () => {
   return (
@@ -30,13 +31,13 @@ const ProjectArea = () => {
               <div className="it-project-2-content d-flex align-items-center justify-content-between">
                 <div>
                   <h4 className="it-project-2-title">
-                    <a className="border-line" href="project-details.html">
+                    <Link className="border-line" to="/project-details">
                       Smart wind Installations
-                    </a>
+                    </Link>
                   </h4>
                   <span>Solar Energy</span>
                 </div>
-                <a href="project-details.html" className="it-project-2-arrow">
+                <Link to="/project-details" className="it-project-2-arrow">
                   <svg
                     width="19"
                     height="17"
@@ -49,7 +50,7 @@ const ProjectArea = () => {
                       fill="currentcolor"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -68,16 +69,13 @@ const ProjectArea = () => {
                   <div className="it-project-2-content d-flex align-items-center justify-content-between">
                     <div>
                       <h4 className="it-project-2-title">
-                        <a className="border-line" href="project-details.html">
+                        <Link className="border-line" to="/project-details">
                           Large-Scale Wind Energy
-                        </a>
+                        </Link>
                       </h4>
                       <span>Solar Energy</span>
                     </div>
-                    <a
-                      href="project-details.html"
-                      className="it-project-2-arrow"
-                    >
+                    <Link to="/project-details" className="it-project-2-arrow">
                       <svg
                         width="19"
                         height="17"
@@ -90,7 +88,7 @@ const ProjectArea = () => {
                           fill="currentcolor"
                         />
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -106,16 +104,13 @@ const ProjectArea = () => {
                   <div className="it-project-2-content d-flex align-items-center justify-content-between">
                     <div>
                       <h4 className="it-project-2-title">
-                        <a className="border-line" href="project-details.html">
+                        <Link className="border-line" to="/project-details">
                           SMountain Wind Energy
-                        </a>
+                        </Link>
                       </h4>
                       <span>Solar Energy</span>
                     </div>
-                    <a
-                      href="project-details.html"
-                      className="it-project-2-arrow"
-                    >
+                    <Link to="/project-details" className="it-project-2-arrow">
                       <svg
                         width="19"
                         height="17"
@@ -128,7 +123,7 @@ const ProjectArea = () => {
                           fill="currentcolor"
                         />
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -140,12 +135,12 @@ const ProjectArea = () => {
         <div className="row">
           <div className="col-12">
             <div className="it-project-2-btn text-center mt-35">
-              <a href="project.html" className="it-btn-theme">
+              <Link to="/project" className="it-btn-theme">
                 <span>
                   <span className="text-1">View All Protfolio</span>
                   <span className="text-2">View All Protfolio</span>
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

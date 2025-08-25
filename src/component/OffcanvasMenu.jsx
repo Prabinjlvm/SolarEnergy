@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const OffcanvasMenu = () => {
   return (
@@ -10,9 +11,9 @@ const OffcanvasMenu = () => {
           </button>
         </div>
         <div className="itoffcanvas__logo">
-          <a href="index.html">
+          <Link to="/">
             <img src="assets/img/logo/logo-white.png" alt="" />
-          </a>
+          </Link>
         </div>
         <div className="itoffcanvas__text">
           <p>
@@ -26,42 +27,42 @@ const OffcanvasMenu = () => {
 
           <div className="it-info-wrapper mb-20 d-flex align-items-center">
             <div className="itoffcanvas__info-icon">
-              <a href="#">
+              <Link to="/">
                 <i className="fal fa-envelope"></i>
-              </a>
+              </Link>
             </div>
             <div className="itoffcanvas__info-address">
               <span>Email</span>
-              <a href="mailto:hello@yourmail.com">hello@yourmail.com</a>
+              <Link to="mailto:hello@yourmail.com">hello@yourmail.com</Link>
             </div>
           </div>
 
           <div className="it-info-wrapper mb-20 d-flex align-items-center">
             <div className="itoffcanvas__info-icon">
-              <a href="#">
+              <Link to="/">
                 <i className="fal fa-phone-alt"></i>
-              </a>
+              </Link>
             </div>
             <div className="itoffcanvas__info-address">
               <span>Phone</span>
-              <a href="tel:(00)45611227890">(00) 456 1122 7890</a>
+              <Link to="tel:(00)45611227890">(00) 456 1122 7890</Link>
             </div>
           </div>
 
           <div className="it-info-wrapper mb-20 d-flex align-items-center">
             <div className="itoffcanvas__info-icon">
-              <a href="#">
+              <Link to="/">
                 <i className="fas fa-map-marker-alt"></i>
-              </a>
+              </Link>
             </div>
             <div className="itoffcanvas__info-address">
               <span>Location</span>
-              <a
-                href="https://googleusercontent.com/maps.google.com/0"
+              <Link
+                to="https://googleusercontent.com/maps.google.com/0"
                 target="_blank"
               >
                 Riverside 255, San Francisco, USA
-              </a>
+              </Link>
             </div>
           </div>
         </div>

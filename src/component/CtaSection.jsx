@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CtaSection = () => {
   return (
@@ -23,12 +24,12 @@ const CtaSection = () => {
               </div>
               <div className="col-xl-6 col-lg-6 col-md-6">
                 <div className="it-cta-2-btn text-md-end">
-                  <a href="contact.html" className="it-btn-theme white-bg">
+                  <Link to="/contact" className="it-btn-theme white-bg">
                     <span>
                       <span className="text-1">Get Energy</span>
                       <span className="text-2">Get Energy</span>
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

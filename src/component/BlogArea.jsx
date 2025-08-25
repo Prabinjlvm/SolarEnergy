@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BlogArea = () => {
   return (
@@ -25,7 +26,7 @@ const BlogArea = () => {
           >
             <div className="it-blog-item mb-30">
               <div className="it-blog-thumb mb-35 border-radius-20">
-                <a href="blog-details.html">
+                <Link to="/">
                   <img
                     className="w-100"
                     src="assets/img/blog/blog-2-1.jpg"
@@ -36,13 +37,13 @@ const BlogArea = () => {
                     src="assets/img/blog/blog-2-1.jpg"
                     alt=""
                   />
-                </a>
+                </Link>
               </div>
               <div className="it-blog-content">
                 <h4 className="it-blog-title mb-30">
-                  <a className="border-line" href="blog-details.html">
+                  <Link className="border-" to="/">
                     How many solar <br /> panels do you need?
-                  </a>
+                  </Link>
                 </h4>
                 <div className="it-blog-user d-flex align-items-center">
                   <img src="assets/img/testimonial/avatar.png" alt="" />
@@ -65,7 +66,7 @@ const BlogArea = () => {
           >
             <div className="it-blog-item mb-30">
               <div className="it-blog-thumb mb-35 border-radius-20">
-                <a href="blog-details.html">
+                <Link to="/">
                   <img
                     className="w-100"
                     src="assets/img/blog/blog-2-2.jpg"
@@ -76,13 +77,13 @@ const BlogArea = () => {
                     src="assets/img/blog/blog-2-2.jpg"
                     alt=""
                   />
-                </a>
+                </Link>
               </div>
               <div className="it-blog-content">
                 <h4 className="it-blog-title mb-30">
-                  <a className="border-line" href="blog-details.html">
+                  <Link className="border-line" to="/">
                     Save Electricity Using Solar Power Today
-                  </a>
+                  </Link>
                 </h4>
                 <div className="it-blog-user d-flex align-items-center">
                   <img src="assets/img/testimonial/avatar-3.jpg" alt="" />
@@ -105,7 +106,7 @@ const BlogArea = () => {
           >
             <div className="it-blog-item mb-30">
               <div className="it-blog-thumb mb-35 border-radius-20">
-                <a href="blog-details.html">
+                <Link to="/">
                   <img
                     className="w-100"
                     src="assets/img/blog/blog-2-3.jpg"
@@ -116,13 +117,13 @@ const BlogArea = () => {
                     src="assets/img/blog/blog-2-3.jpg"
                     alt=""
                   />
-                </a>
+                </Link>
               </div>
               <div className="it-blog-content">
                 <h4 className="it-blog-title mb-30">
-                  <a className="border-line" href="blog-details.html">
+                  <Link className="border-line" to="/">
                     How Do Solar Batteries Actually Work?
-                  </a>
+                  </Link>
                 </h4>
                 <div className="it-blog-user d-flex align-items-center">
                   <img src="assets/img/testimonial/avatar-5.jpg" alt="" />
@@ -145,12 +146,12 @@ const BlogArea = () => {
             data-wow-delay=".9s"
           >
             <div className="it-service-btn text-center mt-30">
-              <a href="blog.html" className="it-btn-theme">
+              <Link to="/" className="it-btn-theme">
                 <span>
                   <span className="text-1">View All News</span>
                   <span className="text-2">View All News</span>
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

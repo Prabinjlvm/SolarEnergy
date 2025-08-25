@@ -12,14 +12,14 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-6">
               <div className="it-header-logo">
-                <a href="index.html">
+                <Link to="/">
                   <img src="assets/img/logo/logo-white3.png" alt="" />
-                </a>
+                </Link>
               </div>
               <div className="it-header-logo-3 d-none">
-                <a href="index.html">
+                <Link to="/">
                   <img src="assets/img/logo/logo-black.png" alt="" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-xxl-7 col-xl-8">
@@ -30,81 +30,35 @@ const Header = () => {
                       <Link to="/">Home</Link>
                     </li>
                     <li className="has-dropdown">
-                      <a href="about-us-v1.html">About Us</a>
+                      <Link to="/">About Us</Link>
                       <ul className="it-submenu submenu">
                         <li>
-                          <a href="about-us-v1.html">About Us V1</a>
+                          <Link to="/">About Us V1</Link>
                         </li>
                         <li>
-                          <a href="about-us-v2.html">About Us V2</a>
-                        </li>
-                      </ul>
-                    </li>
-                    {/* <li className="has-dropdown">
-                      <a href="#">Pages</a>
-                      <ul className="it-submenu submenu">
-                        <li>
-                          <a href="team.html">Team</a>
-                        </li>
-                        <li>
-                          <a href="team-details.html">Team Details</a>
-                        </li>
-                        <li>
-                          <a href="testimonial.html">Testimonial</a>
-                        </li>
-                        <li>
-                          <a href="shop-sidebar.html">Shop Sidebar</a>
-                        </li>
-                        <li>
-                          <a href="shop-details.html">Shop Details</a>
-                        </li>
-                        <li>
-                          <a href="faq.html">Faq</a>
-                        </li>
-                        <li>
-                          <a href="career.html">Career</a>
-                        </li>
-                        <li>
-                          <a href="sign-in.html">Sign In</a>
-                        </li>
-                        <li>
-                          <a href="sign-up.html">Sign Up</a>
-                        </li>
-                        <li>
-                          <a href="cart.html">Cart</a>
-                        </li>
-                        <li>
-                          <a href="checkout.html">Checkout</a>
-                        </li>
-                        <li>
-                          <a href="cost-calculation.html">Cost Calculation</a>
-                        </li>
-                        <li>
-                          <a href="404.html">Error</a>
-                        </li>
-                      </ul>
-                    </li> */}
-                    <li className="has-dropdown">
-                      <a href="service-v1.html">Services</a>
-                      <ul className="it-submenu submenu">
-                        <li>
-                          <a href="service-v1.html">Service 01</a>
-                        </li>
-                        <li>
-                          <a href="service-v2.html">Service 02</a>
-                        </li>
-                        <li>
-                          <a href="service-details.html">Service details</a>
-                        </li>
-                        <li>
-                          <a href="service-details-no-sidebar.html">
-                            Service No Sidebar
-                          </a>
+                          <Link to="/">About Us V2</Link>
                         </li>
                       </ul>
                     </li>
                     <li className="has-dropdown">
-                      <a href="project.html">Project</a>
+                      <Link to="/">Services</Link>
+                      <ul className="it-submenu submenu">
+                        <li>
+                          <Link to="/">Service 01</Link>
+                        </li>
+                        <li>
+                          <Link to="/">Service 02</Link>
+                        </li>
+                        <li>
+                          <Link to="/">Service details</Link>
+                        </li>
+                        <li>
+                          <Link to="/">Service No Sidebar</Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="has-dropdown">
+                      <Link to="/">Project</Link>
                       <ul className="it-submenu submenu">
                         <li>
                           <Link to="/project">Project</Link>
@@ -115,26 +69,24 @@ const Header = () => {
                       </ul>
                     </li>
                     <li className="has-dropdown">
-                      <a href="blog.html">Blog</a>
+                      <Link to="/">Blog</Link>
                       <ul className="it-submenu submenu">
                         <li>
-                          <a href="blog.html">Blog</a>
+                          <Link to="/">Blog</Link>
                         </li>
                         <li>
-                          <a href="blog-sidebar.html">Blog Sidebar</a>
+                          <Link to="/">Blog Sidebar</Link>
                         </li>
                         <li>
-                          <a href="blog-details.html">Blog Details</a>
+                          <Link to="/">Blog Details</Link>
                         </li>
                         <li>
-                          <a href="blog-details-no-sidebar.html">
-                            Blog No Sidebar
-                          </a>
+                          <Link to="/">Blog No Sidebar</Link>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <a href="contact.html">Contact</a>
+                      <Link to="/">Contact</Link>
                     </li>
                   </ul>
                 </nav>
@@ -158,12 +110,12 @@ const Header = () => {
                     </svg>
                   </button>
                 </div>
-                <a href="contact.html" className="it-btn-theme">
+                <Link to="/" className="it-btn-theme">
                   <span>
                     <span className="text-1">Get a Free Call</span>
                     <span className="text-2">Get a Free Call</span>
                   </span>
-                </a>
+                </Link>
                 <div className="it-header-bar d-xl-none">
                   <button className="it-menu-bar">
                     <span>

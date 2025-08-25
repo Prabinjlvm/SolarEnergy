@@ -5,6 +5,7 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const CopyrightArea = () => {
   return (
@@ -22,7 +23,7 @@ const CopyrightArea = () => {
               >
                 <div className="it-copyright-left text-center text-md-start">
                   <p className="mb-0">
-                    © 2025 <a href="/">Solaar</a> All rights reserved.
+                    © 2025 <Link to="/">Solaar</Link> All rights reserved.
                   </p>
                 </div>
               </div>
@@ -33,26 +34,26 @@ const CopyrightArea = () => {
               >
                 <div className="it-copyright-social text-center text-sm-end">
                   {/* Social Icons */}
-                  <a href="#">
+                  <Link to="/">
                     <i>
                       <FaTwitter />
                     </i>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="/">
                     <i>
                       <FaFacebookF />
                     </i>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="/">
                     <i>
                       <FaInstagram />
                     </i>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="/">
                     <i>
                       <FaLinkedinIn />
                     </i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

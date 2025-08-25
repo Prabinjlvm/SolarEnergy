@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MonitoringArea = () => {
   return (
@@ -96,12 +97,12 @@ const MonitoringArea = () => {
 
               {/* Contact Button */}
               <div className="it-about-btn d-sm-flex align-items-center">
-                <a href="contact.html" className="it-btn-theme mr-30">
+                <Link to="/" className="it-btn-theme mr-30">
                   <span>
                     <span className="text-1">Contact Us</span>
                     <span className="text-2">Contact Us</span>
                   </span>
-                </a>
+                </Link>
 
                 <div className="it-slider-2-contact d-flex align-items-center">
                   <span className="pulse-theme">
@@ -131,9 +132,9 @@ const MonitoringArea = () => {
                       />
                     </svg>
                   </span>
-                  <a className="border-line text-black" href="tel:+4155550132">
+                  <Link className="border-line text-black" to="/">
                     +(415) 555‑0132
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

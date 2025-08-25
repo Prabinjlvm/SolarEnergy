@@ -118,26 +118,26 @@ const ProjectDetails = () => {
                     <div className="it-pro-details-more-info">
                       <div className="text-start">
                         <span>Project URL</span>
-                        <a href="mailto:http://www.example.com">
+                        <Link to="mailto:http://www.example.com">
                           http://www.example.com
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="it-pro-details-more-social it-pro-details-more-info d-flex justify-content-lg-end">
                       <div>
                         <span>Share</span>
-                        <a href="#">
+                        <Link to="/">
                           <FaFacebookF />{" "}
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="/">
                           <FaTwitter />{" "}
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="/">
                           <FaLinkedinIn />
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="/">
                           <FaInstagram />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -152,7 +152,7 @@ const ProjectDetails = () => {
 
                   <div className="postbox-content-box mb-45">
                     <h4 className="it-inner-title mb-20">
-                      <a href="#">Project overview</a>
+                      <Link to="/">Project overview</Link>
                     </h4>
                     <div className="postbox-dsc">
                       <p>
@@ -280,7 +280,7 @@ const ProjectDetails = () => {
 
                   <div className="postbox-content-box">
                     <h4 className="it-inner-title mb-20">
-                      <a href="#">Installation Process Overview </a>
+                      <Link to="/">Installation Process Overview </Link>
                     </h4>
                     <div className="postbox-dsc">
                       <p>

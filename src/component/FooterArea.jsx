@@ -1,5 +1,6 @@
 import React from "react";
 import CopyrightArea from "./CopyrightArea";
+import { Link } from "react-router-dom";
 
 const FooterArea = () => {
   return (
@@ -22,9 +23,9 @@ const FooterArea = () => {
             >
               <div className="it-footer-widget it-footer-col-4-1">
                 <div className="it-footer-widget-logo mb-20">
-                  <a href="/">
+                  <Link to="/">
                     <img src="assets/img/logo/logo-white3.png" alt="Logo" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="it-footer-widget-text">
                   <p>
@@ -34,12 +35,12 @@ const FooterArea = () => {
                   </p>
                 </div>
                 <div className="it-footer-widget-btn">
-                  <a href="/contact" className="it-btn-theme">
+                  <Link to="/contact" className="it-btn-theme">
                     <span>
                       <span className="text-1">Get A Quote</span>
                       <span className="text-2">Get A Quote</span>
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -55,19 +56,19 @@ const FooterArea = () => {
                 <div className="it-footer-widget-menu">
                   <ul>
                     <li>
-                      <a href="/">Home</a>
+                      <Link to="/">Home</Link>
                     </li>
                     <li>
-                      <a href="/about">About Us</a>
+                      <Link to="/about">About Us</Link>
                     </li>
                     <li>
-                      <a href="/services">Services</a>
+                      <Link to="/services">Services</Link>
                     </li>
                     <li>
-                      <a href="/career">Career</a>
+                      <Link to="/career">Career</Link>
                     </li>
                     <li>
-                      <a href="/contact">Contact us</a>
+                      <Link to="/contact">Contact us</Link>
                     </li>
                   </ul>
                 </div>
@@ -85,19 +86,19 @@ const FooterArea = () => {
                 <div className="it-footer-widget-menu">
                   <ul>
                     <li>
-                      <a href="#">Solar Planning</a>
+                      <Link to="/">Solar Planning</Link>
                     </li>
                     <li>
-                      <a href="#">Solar Installation</a>
+                      <Link to="/">Solar Installation</Link>
                     </li>
                     <li>
-                      <a href="#">Electricity storage</a>
+                      <Link to="/">Electricity storage</Link>
                     </li>
                     <li>
-                      <a href="#">Solar Repairing</a>
+                      <Link to="/">Solar Repairing</Link>
                     </li>
                     <li>
-                      <a href="#">Bio gas Plant</a>
+                      <Link to="/">Bio gas Plant</Link>
                     </li>
                   </ul>
                 </div>
@@ -116,12 +117,12 @@ const FooterArea = () => {
                   <div className="it-footer-widget-gallery-wrap">
                     {[1, 2, 3, 4, 5, 6].map((img, i) => (
                       <div key={i} className="it-footer-widget-gallery-item">
-                        <a href="#">
+                        <Link to="#">
                           <img
                             src={`assets/img/video/gallery-${img}.jpg`}
                             alt={`Gallery ${img}`}
                           />
-                        </a>
+                        </Link>
                       </div>
                     ))}
                   </div>

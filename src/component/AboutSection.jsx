@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
@@ -91,12 +92,12 @@ const AboutSection = () => {
                 </div>
               </div>
               <div className="it-about-btn d-sm-flex align-items-center">
-                <a href="about-us-v1.html" className="it-btn-theme mr-30">
+                <Link to="/" className="it-btn-theme mr-30">
                   <span>
                     <span className="text-1">Explore More</span>
                     <span className="text-2">Explore More</span>
                   </span>
-                </a>
+                </Link>
                 <div className="it-about-author d-flex align-items-center">
                   <div className="it-about-author-avater">
                     <img src="assets/img/about/avater.png" alt="" />

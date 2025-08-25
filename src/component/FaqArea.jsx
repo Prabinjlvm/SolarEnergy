@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FaqArea = () => {
   return (
@@ -161,9 +162,9 @@ const FaqArea = () => {
           data-wow-delay="0.1s"
         >
           <img src="assets/img/faq/faq-5.jpg" alt="" />
-          <a
+          <Link
             className="pulse-theme it-faq-2-video popup-video"
-            href="https://www.youtube.com/watch?v=2EPqn-k9Pjk"
+            to="https://www.youtube.com/watch?v=2EPqn-k9Pjk"
           >
             <span>
               <svg
@@ -176,7 +177,7 @@ const FaqArea = () => {
                 <path d="M20 11.5L0 23V0L20 11.5Z" fill="#0C121D" />
               </svg>
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

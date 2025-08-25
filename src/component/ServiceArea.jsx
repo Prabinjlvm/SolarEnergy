@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ServiceArea = () => {
   return (
@@ -25,12 +26,12 @@ const ServiceArea = () => {
                     solutions that put you in control, lower costs, and <br />
                     support a cleaner, brighter future.
                   </p>
-                  <a href="service-v1.html" className="it-btn-theme">
+                  <Link to="/" className="it-btn-theme">
                     <span>
                       <span className="text-1">View All Services</span>
                       <span className="text-2">View All Services</span>
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -55,9 +56,9 @@ const ServiceArea = () => {
               </div>
               <div className="it-service-4-content pl-10">
                 <h5 className="it-service-4-title mb-15">
-                  <a className="border-line" href="service-details.html">
+                  <Link className="border-line" to="/">
                     Designed for You
-                  </a>
+                  </Link>
                 </h5>
                 <p>
                   From planning to setup and ongoing support, our expert team
@@ -84,9 +85,9 @@ const ServiceArea = () => {
               </div>
               <div className="it-service-4-content pl-10">
                 <h5 className="it-service-4-title mb-15">
-                  <a className="border-line" href="service-details.html">
+                  <Link className="border-line" to="/">
                     Unmatched Heritage
-                  </a>
+                  </Link>
                 </h5>
                 <p>
                   Backed by years of expertise, our skilled team delivers a
@@ -113,9 +114,9 @@ const ServiceArea = () => {
               </div>
               <div className="it-service-4-content pl-10">
                 <h5 className="it-service-4-title mb-15">
-                  <a className="border-line" href="service-details.html">
+                  <Link className="border-line" to="/">
                     Quality Tested & Built
-                  </a>
+                  </Link>
                 </h5>
                 <p>
                   Every component and installation is rigorously tested,

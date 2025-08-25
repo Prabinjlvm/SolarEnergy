@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ServiceSection = () => {
   return (
@@ -23,12 +24,12 @@ const ServiceSection = () => {
                       Empower your lifestyle with smart, sustainable energy{" "}
                       <br /> solutions that give you control, reduce bills,
                     </p>
-                    <a href="service-details.html" className="it-btn-theme">
+                    <Link to="/" className="it-btn-theme">
                       <span>
                         <span className="text-1">View All Services</span>
                         <span className="text-2">View All Services</span>
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -59,7 +60,7 @@ const ServiceSection = () => {
                     on electricity costs, and contribute to a cleaner
                     environment.
                   </p>
-                  <a className="it-service-4-link" href="service-details.html">
+                  <Link className="it-service-4-link" to="/">
                     <span>
                       <span className="text-1">
                         Explore More
@@ -92,7 +93,7 @@ const ServiceSection = () => {
                         </svg>
                       </span>
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -116,12 +117,12 @@ const ServiceSection = () => {
                     operating expenses, and promote a sustainable future
                     responsibly.
                   </p>
-                  <a className="it-service-4-link" href="service-details.html">
+                  <Link className="it-service-4-link" to="/">
                     <span>
                       <span className="text-1">Explore More</span>
                       <span className="text-2">Explore More</span>
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -145,12 +146,12 @@ const ServiceSection = () => {
                     energy security, and drive the transition toward a greener
                     future.
                   </p>
-                  <a className="it-service-4-link" href="service-details.html">
+                  <Link className="it-service-4-link" to="/">
                     <span>
                       <span className="text-1">Explore More</span>
                       <span className="text-2">Explore More</span>
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
