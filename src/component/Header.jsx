@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -25,149 +26,8 @@ const Header = () => {
               <div className="it-header-menu it-header-dropdown">
                 <nav className="it-menu-content">
                   <ul>
-                    <li className="has-dropdown p-static">
-                      <a href="index.html">Home</a>
-                      <div className=" submenu has-home-img">
-                        <div className="it-homemenu-wrapper">
-                          <div className="row gx-6 row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-5">
-                            <div className="col home-img">
-                              <div className="home-img-thumb home-img-overly mb-20">
-                                <img src="assets/img/menu/home-1.jpg" alt="" />
-                                <div className="home-img-btn">
-                                  <a className="it-btn-sm" href="index.html">
-                                    <span>
-                                      <span className="text-1">Multi Page</span>
-                                      <span className="text-2">Multi Page</span>
-                                    </span>
-                                  </a>
-                                  <a
-                                    className="it-btn-sm"
-                                    href="index-one-page.html"
-                                  >
-                                    <span>
-                                      <span className="text-1">One Page</span>
-                                      <span className="text-2">One Page</span>
-                                    </span>
-                                  </a>
-                                </div>
-                              </div>
-                              <div className="home-img-content text-center">
-                                <h4 className="home-img-title">
-                                  <a href="index.html">Oil Energy</a>
-                                </h4>
-                              </div>
-                            </div>
-                            <div className="col home-img">
-                              <div className="home-img-thumb home-img-overly mb-20">
-                                <img src="assets/img/menu/home-2.jpg" alt="" />
-                                <div className="home-img-btn">
-                                  <a className="it-btn-sm" href="index-2.html">
-                                    <span>
-                                      <span className="text-1">Multi Page</span>
-                                      <span className="text-2">Multi Page</span>
-                                    </span>
-                                  </a>
-                                  <a
-                                    className="it-btn-sm"
-                                    href="index-2-one-page.html"
-                                  >
-                                    <span>
-                                      <span className="text-1">One Page</span>
-                                      <span className="text-2">One Page</span>
-                                    </span>
-                                  </a>
-                                </div>
-                              </div>
-                              <div className="home-img-content text-center">
-                                <h4 className="home-img-title">
-                                  <a href="index-2.html">Solar Service</a>
-                                </h4>
-                              </div>
-                            </div>
-                            <div className="col home-img">
-                              <div className="home-img-thumb home-img-overly mb-20">
-                                <img src="assets/img/menu/home-3.jpg" alt="" />
-                                <div className="home-img-btn">
-                                  <a className="it-btn-sm" href="index-3.html">
-                                    <span>
-                                      <span className="text-1">Multi Page</span>
-                                      <span className="text-2">Multi Page</span>
-                                    </span>
-                                  </a>
-                                  <a
-                                    className="it-btn-sm"
-                                    href="index-3-one-page.html"
-                                  >
-                                    <span>
-                                      <span className="text-1">One Page</span>
-                                      <span className="text-2">One Page</span>
-                                    </span>
-                                  </a>
-                                </div>
-                              </div>
-                              <div className="home-img-content text-center">
-                                <h4 className="home-img-title">
-                                  <a href="index-3.html">Solar Instalment</a>
-                                </h4>
-                              </div>
-                            </div>
-                            <div className="col home-img">
-                              <div className="home-img-thumb home-img-overly mb-20">
-                                <img src="assets/img/menu/home-4.jpg" alt="" />
-                                <div className="home-img-btn">
-                                  <a className="it-btn-sm" href="index-4.html">
-                                    <span>
-                                      <span className="text-1">Multi Page</span>
-                                      <span className="text-2">Multi Page</span>
-                                    </span>
-                                  </a>
-                                  <a
-                                    className="it-btn-sm"
-                                    href="index-4-one-page.html"
-                                  >
-                                    <span>
-                                      <span className="text-1">One Page</span>
-                                      <span className="text-2">One Page</span>
-                                    </span>
-                                  </a>
-                                </div>
-                              </div>
-                              <div className="home-img-content text-center">
-                                <h4 className="home-img-title">
-                                  <a href="index-4.html">Hydro Energy</a>
-                                </h4>
-                              </div>
-                            </div>
-                            <div className="col home-img">
-                              <div className="home-img-thumb home-img-overly mb-20">
-                                <img src="assets/img/menu/home-5.jpg" alt="" />
-                                <div className="home-img-btn">
-                                  <a className="it-btn-sm" href="index-5.html">
-                                    <span>
-                                      <span className="text-1">Multi Page</span>
-                                      <span className="text-2">Multi Page</span>
-                                    </span>
-                                  </a>
-                                  <a
-                                    className="it-btn-sm"
-                                    href="index-5-one-page.html"
-                                  >
-                                    <span>
-                                      <span className="text-1">One Page</span>
-                                      <span className="text-2">One Page</span>
-                                    </span>
-                                  </a>
-                                </div>
-                              </div>
-                              <div className="home-img-content text-center">
-                                <h4 className="home-img-title">
-                                  <a href="index-5.html">Wind Energy</a>
-                                </h4>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <li className=" p-static">
+                      <Link to="/">Home</Link>
                     </li>
                     <li className="has-dropdown">
                       <a href="about-us-v1.html">About Us</a>
@@ -247,7 +107,7 @@ const Header = () => {
                       <a href="project.html">Project</a>
                       <ul className="it-submenu submenu">
                         <li>
-                          <a href="project.html">Project</a>
+                          <Link to="/project">Project</Link>
                         </li>
                         <li>
                           <a href="project-details.html">Project Details</a>
