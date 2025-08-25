@@ -47,9 +47,9 @@ const FaqArea = () => {
                       >
                         <div className="accordion-body">
                           <p className="mb-0">
-                            Empower your lifestyle with smart, sustainable
-                            energy solutions that give you control, reduce
-                            bills, and support a cleaner future—tailored to your
+                            Transform your lifestyle with renewable solar
+                            solutions that deliver savings, energy control, and
+                            long-term sustainability—crafted for your unique
                             home and needs.
                           </p>
                         </div>
@@ -78,10 +78,10 @@ const FaqArea = () => {
                       >
                         <div className="accordion-body">
                           <p className="mb-0">
-                            Empower your lifestyle with smart, sustainable
-                            energy solutions that give you control, reduce
-                            bills, and support a cleaner future—tailored to your
-                            home and needs.
+                            Choose eco-friendly solar power that reduces carbon
+                            footprints, safeguards ecosystems, and delivers
+                            reliable energy—supporting a cleaner and greener
+                            tomorrow.
                           </p>
                         </div>
                       </div>
@@ -109,10 +109,10 @@ const FaqArea = () => {
                       >
                         <div className="accordion-body">
                           <p className="mb-0">
-                            Empower your lifestyle with smart, sustainable
-                            energy solutions that give you control, reduce
-                            bills, and support a cleaner future—tailored to your
-                            home and needs.
+                            Cut your energy expenses dramatically with advanced
+                            solar solutions that let you save up to 80% on
+                            electricity costs while enjoying reliable,
+                            sustainable power every day.
                           </p>
                         </div>
                       </div>
@@ -140,10 +140,9 @@ const FaqArea = () => {
                       >
                         <div className="accordion-body">
                           <p className="mb-0">
-                            Empower your lifestyle with smart, sustainable
-                            energy solutions that give you control, reduce
-                            bills, and support a cleaner future—tailored to your
-                            home and needs.
+                            Get reliable 24/7 support from our team, ensuring
+                            your solar solutions perform at their best with help
+                            whenever you need it, day or night.
                           </p>
                         </div>
                       </div>

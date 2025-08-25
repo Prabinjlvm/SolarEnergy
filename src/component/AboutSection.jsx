@@ -10,8 +10,7 @@ const AboutSection = () => {
               <div className="it-about-section-title-box">
                 <span className="it-section-subtitle">Who We Are</span>
                 <h4 className="it-section-title fz-45 it-split-text it-split-in-right">
-                  We provide reliable, clean wind energy solutions for a
-                  sustainable future.
+                  Leading the Way in Solar Power Innovation
                 </h4>
               </div>
             </div>
@@ -64,8 +63,13 @@ const AboutSection = () => {
                   <div className="it-about-mission">
                     <span>Our Vision</span>
                     <p>
-                      Deliver clean, efficient wind energy <br />
-                      solutions that reduce carbon
+                      Our vision is to be a global leader in the renewable
+                      energy sector, recognized for our excellence in solar
+                      procurement and installation. We aspire to drive the
+                      widespread adoption of solar energy, fostering a
+                      sustainable future for generations to come through
+                      continuous innovation, exceptional service, and unwavering
+                      commitment to environmental stewardship.
                     </p>
                   </div>
                 </div>
@@ -73,8 +77,15 @@ const AboutSection = () => {
                   <div className="it-about-mission">
                     <span>Our Mission</span>
                     <p>
-                      Deliver clean, efficient wind energy <br />
-                      solutions that reduce carbon
+                      Our mission is to deliver exceptional solar energy systems
+                      by combining advanced engineering, precise procurement,
+                      and expert construction practices. We are committed to
+                      providing our clients with reliable, efficient, and
+                      cost-effective solar solutions that drive environmental
+                      sustainability and energy independence. Through continuous
+                      innovation, superior customer service, and a dedicated
+                      team, we strive to make solar energy accessible and
+                      beneficial for all.
                     </p>
                   </div>
                 </div>
@@ -82,8 +93,8 @@ const AboutSection = () => {
               <div className="it-about-btn d-sm-flex align-items-center">
                 <a href="about-us-v1.html" className="it-btn-theme mr-30">
                   <span>
-                    <span className="text-1">More About Us</span>
-                    <span className="text-2">More About Us</span>
+                    <span className="text-1">Explore More</span>
+                    <span className="text-2">Explore More</span>
                   </span>
                 </a>
                 <div className="it-about-author d-flex align-items-center">

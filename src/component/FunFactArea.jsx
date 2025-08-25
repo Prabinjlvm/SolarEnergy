@@ -15,15 +15,15 @@ const FunFactArea = () => {
               <div className="it-funfact-2-section-title-box mb-25">
                 <span className="it-section-subtitle">Imfact</span>
                 <h4 className="it-section-title text-white fz-45 it-split-text it-split-in-right">
-                  Products & Services <br />
-                  by State
+                  Solutions & Offerings <br /> Across Regions
                 </h4>
               </div>
               <div className="it-funfact-2-text">
                 <p className="mb-35">
-                  more people in more ways every day, so that all of us can be
-                  part of <br />
-                  the changing energy system. Because Powering Progress.
+                  Delivering innovative energy solutions to communities
+                  everywhere, <br />
+                  ensuring everyone benefits from a cleaner, smarter, and more
+                  sustainable future.
                 </p>
               </div>
               <a href="contact.html" className="it-btn-theme">

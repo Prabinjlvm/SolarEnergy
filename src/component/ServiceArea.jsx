@@ -13,8 +13,7 @@ const ServiceArea = () => {
               <div className="it-about-2-section-title-box">
                 <span className="it-section-subtitle">Extra Future</span>
                 <h4 className="it-section-title fz-45 it-split-text it-split-in-right">
-                  Leading the <br />
-                  Future of Solar
+                  Transforming Energy, Empowering Lives
                 </h4>
               </div>
             </div>
@@ -22,8 +21,9 @@ const ServiceArea = () => {
               <div className="it-about-2-text d-flex justify-content-lg-end">
                 <div className="text-start">
                   <p className="mb-30">
-                    Empower your lifestyle with smart, sustainable energy <br />
-                    solutions that give you control, reduce bills,
+                    Empower your life with innovative, sustainable energy <br />
+                    solutions that put you in control, lower costs, and <br />
+                    support a cleaner, brighter future.
                   </p>
                   <a href="service-v1.html" className="it-btn-theme">
                     <span>
@@ -60,9 +60,9 @@ const ServiceArea = () => {
                   </a>
                 </h5>
                 <p>
-                  From consultation to installation and beyond, our dedicated
-                  teams create a seamless experience and customize a complete
-                  solar
+                  From planning to setup and ongoing support, our expert team
+                  ensures a smooth experience a complete solar solution for your
+                  needs.
                 </p>
               </div>
             </div>
@@ -89,9 +89,9 @@ const ServiceArea = () => {
                   </a>
                 </h5>
                 <p>
-                  From consultation to installation and beyond, our dedicated
-                  teams create a seamless experience and customize a complete
-                  solar
+                  Backed by years of expertise, our skilled team delivers a
+                  smooth journey from planning to installation, crafting a fully
+                  customized solar solution.
                 </p>
               </div>
             </div>
@@ -118,9 +118,9 @@ const ServiceArea = () => {
                   </a>
                 </h5>
                 <p>
-                  From consultation to installation and beyond, our dedicated
-                  teams create a seamless experience and customize a complete
-                  solar
+                  Every component and installation is rigorously tested,
+                  ensuring reliable performance and a fully customized solar
+                  solution for your needs.
                 </p>
               </div>
             </div>

@@ -16,16 +16,15 @@ const MonitoringArea = () => {
               <div className="it-project-2-section-title-box mb-20">
                 <span className="it-section-subtitle">Monitoring</span>
                 <h4 className="it-section-title fz-45 it-split-text it-split-in-right">
-                  Tailored wind systems <br />
-                  for unique projects.
+                  Innovative Wind Solutions Built for Every Project
                 </h4>
               </div>
               <div className="it-monitoring-text">
                 <p className="mb-25">
-                  We design tailored wind energy systems to efficiently serve
-                  unique <br />
-                  residential, commercial, and industrial power needs with
-                  sustainable,
+                  Our innovative wind solutions are engineered to deliver
+                  efficient, reliable power for residential, commercial, and
+                  industrial projects, ensuring sustainability and performance
+                  for every site.
                 </p>
               </div>
 

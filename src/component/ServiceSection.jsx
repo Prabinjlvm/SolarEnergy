@@ -12,7 +12,7 @@ const ServiceSection = () => {
                 <div className="it-about-2-section-title-box">
                   <span className="it-section-subtitle">Our Best Services</span>
                   <h4 className="it-section-title fz-45 it-split-text it-split-in-right">
-                    End-to-End Wind Energy <br /> Project Services
+                    We Are Pioneers In The World Of Renewable Energy
                   </h4>
                 </div>
               </div>
@@ -48,10 +48,13 @@ const ServiceSection = () => {
                   <img src="assets/img/service/service-5-1.png" alt="" />
                 </div>
                 <div className="it-service-4-content">
-                  <h5 className="it-service-4-title mb-20">Home Wind Energy</h5>
+                  <h5 className="it-service-4-title mb-20">
+                    Home Solar Energy
+                  </h5>
                   <p>
-                    Generate clean electricity for your household, lower monthly
-                    bills, and reduce carbon emissions efficiently.
+                    Harness the power of the sun to energize your home, cut down
+                    on electricity costs, and contribute to a cleaner
+                    environment.
                   </p>
                   <a className="it-service-4-link" href="service-details.html">
                     <span>
@@ -103,11 +106,12 @@ const ServiceSection = () => {
                 </div>
                 <div className="it-service-4-content">
                   <h5 className="it-service-4-title mb-20">
-                    Commercial Wind Solutions
+                    Commercial Solar Solutions
                   </h5>
                   <p>
-                    Generate clean electricity for your household, lower monthly
-                    bills, and reduce carbon emissions efficiently.
+                    Power your business with reliable solar energy, cut
+                    operating expenses, and promote a sustainable future
+                    responsibly.
                   </p>
                   <a className="it-service-4-link" href="service-details.html">
                     <span>
@@ -131,11 +135,12 @@ const ServiceSection = () => {
                 </div>
                 <div className="it-service-4-content">
                   <h5 className="it-service-4-title mb-20">
-                    Utility-Scale Wind Farms
+                    Utility-Scale Solar Farms
                   </h5>
                   <p>
-                    Generate clean electricity for your household, lower monthly
-                    bills, and reduce carbon emissions efficiently.
+                    Deliver large-scale solar power for communities, ensure
+                    energy security, and drive the transition toward a greener
+                    future.
                   </p>
                   <a className="it-service-4-link" href="service-details.html">
                     <span>

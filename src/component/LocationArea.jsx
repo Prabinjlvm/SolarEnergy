@@ -11,8 +11,7 @@ const LocationArea = () => {
               <div className="it-location-section-title-box mb-45">
                 <span className="it-section-subtitle">who are we</span>
                 <h4 className="it-section-title it-split-text it-split-in-right">
-                  Express in the world <br />
-                  of solaar energy.
+                  Experience the Power <br /> of Solaar Energy
                 </h4>
               </div>
               <div className="row">
@@ -34,8 +33,9 @@ const LocationArea = () => {
                     </span>
                     <h5 className="title">Environmentally Friendly</h5>
                     <p>
-                      Yes, we operate in North America, <br />
-                      Europe, the Middle East, and Asia.
+                      We prioritize green energy solutions, <br />
+                      reducing carbon footprint across homes, businesses, and
+                      communities.
                     </p>
                   </div>
                 </div>
@@ -57,8 +57,8 @@ const LocationArea = () => {
                     </span>
                     <h5 className="title">Low Maintenance</h5>
                     <p>
-                      Yes, we operate in North America, <br />
-                      Europe, the Middle East, and Asia.
+                      Our systems are designed for easy upkeep, <br />
+                      ensuring long-lasting performance with minimal effort.
                     </p>
                   </div>
                 </div>
