@@ -50,7 +50,7 @@ const ServiceArea = () => {
               <div className="it-service-5-thumb border-radius-20 mb-25">
                 <img
                   className="w-100"
-                  src="assets/img/service/service-5-4.png"
+                  src="assets/img/service/serviceslide1.jpg"
                   alt=""
                 />
               </div>
@@ -79,7 +79,7 @@ const ServiceArea = () => {
               <div className="it-service-5-thumb border-radius-20 mb-25">
                 <img
                   className="w-100"
-                  src="assets/img/service/service-5-5.png"
+                  src="assets/img/service/serviceslide2.jpg"
                   alt=""
                 />
               </div>

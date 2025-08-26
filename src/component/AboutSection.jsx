@@ -24,7 +24,7 @@ const AboutSection = () => {
                       data-wow-duration="1.5s"
                       data-wow-delay="0.1s"
                     >
-                      <img src="assets/img/about/thumb-5-1.jpg" alt="" />
+                      <img src="assets/img/about/aboutslide1.jpg" alt="" />
                     </div>
                   </div>
                   <div className="col-md-6 col-sm-6">
@@ -33,7 +33,7 @@ const AboutSection = () => {
                       data-wow-duration="1.5s"
                       data-wow-delay="0.1s"
                     >
-                      <img src="assets/img/about/thumb-5-2.jpg" alt="" />
+                      <img src="assets/img/about/aboutslide2.jpg" alt="" />
                     </div>
                   </div>
                 </div>

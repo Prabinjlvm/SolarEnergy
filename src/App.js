@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Project from './pages/Project';
 import ProjectDetails from './pages/ProjectDetails';
 import ScrollToTop from './component/ScrollToTop';
+import AboutUsV1 from './pages/AboutUsV1';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
      <Route path="/" element={<Home />} />
      <Route path="/project" element={<Project />} />
      <Route path="/project-details" element={<ProjectDetails />} />
+     <Route path="/about-us" element={<AboutUsV1 />} />
     </Routes>
     </>
    

@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const closeMenu = () => setMenuOpen(false);
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden"; // disable scroll
+    } else {
+      document.body.style.overflow = "auto"; // enable scroll
+    }
+  }, [menuOpen]);
   return (
     <div
       id="header-sticky"
@@ -37,10 +45,12 @@ const Header = () => {
                     </li>
 
                     <li className="has-dropdown">
-                      <Link to="/about-us">About</Link>
+                      <Link to="/about" onClick={(e) => e.preventDefault()}>
+                        About
+                      </Link>
                       <ul className="it-submenu submenu">
                         <li>
-                          <Link to="/">About Us</Link>
+                          <Link to="/about-us">About Us</Link>
                         </li>
                         <li>
                           <Link to="/">Vision & Mission</Link>
@@ -56,7 +66,9 @@ const Header = () => {
                     </li>
 
                     <li className="has-dropdown">
-                      <Link to="/">Our Site</Link>
+                      <Link to="/" onClick={(e) => e.preventDefault()}>
+                        Our Site
+                      </Link>
                       <ul className="it-submenu submenu">
                         <li>
                           <Link to="/">On-Site</Link>
@@ -71,7 +83,12 @@ const Header = () => {
                       <Link to="/">Project</Link>
                       <ul className="it-submenu submenu">
                         <li>
-                          <Link to="/project">Project</Link>
+                          <Link
+                            to="/project"
+                            onClick={(e) => e.preventDefault()}
+                          >
+                            Project
+                          </Link>
                         </li>
                         <li>
                           <Link to="/project-details">Project Details</Link>
@@ -140,7 +157,7 @@ const Header = () => {
                       <div className="submenu">
                         <Link
                           className="menu-item"
-                          to="/aboutus"
+                          to="/about-us"
                           onClick={closeMenu}
                         >
                           About Us
