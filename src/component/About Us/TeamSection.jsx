@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const teamMembers = [
   {
@@ -54,12 +55,12 @@ const TeamSection = () => {
                 <br />
                 Eco-Friendly Technology
               </p>
-              <a href="team.html" className="it-btn-theme">
+              <Link to="/team" className="it-btn-theme">
                 <span>
                   <span className="text-1">View All Team Members</span>
                   <span className="text-2">View All Team Members</span>
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -82,25 +83,25 @@ const TeamSection = () => {
                           alt={member.name}
                         />
                         <div className="it-team-social">
-                          <a href="#">
+                          <Link to="/">
                             <i className="fab fa-facebook-f"></i>
-                          </a>
-                          <a href="#">
+                          </Link>
+                          <Link to="/">
                             <i className="fab fa-twitter"></i>
-                          </a>
-                          <a href="#">
+                          </Link>
+                          <Link to="/">
                             <i className="fab fa-instagram"></i>
-                          </a>
-                          <a href="#">
+                          </Link>
+                          <Link to="/">
                             <i className="fab fa-linkedin-in"></i>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <div className="it-team-content">
                         <h4 className="it-team-title">
-                          <a className="border-line" href="team-details.html">
+                          <Link className="border-line" to="/team-details">
                             {member.name}
-                          </a>
+                          </Link>
                         </h4>
                         <span>{member.role}</span>
                       </div>
