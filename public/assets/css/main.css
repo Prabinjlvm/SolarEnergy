@@ -17356,6 +17356,106 @@ input[type=radio] {
   }
 }
 
+/* Position of the burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 28px;
+  height: 22px;
+  right: 20px;
+  top: 20px;
+  z-index: 1100;
+}
+
+/* Color of burger bars */
+.bm-burger-bars {
+  background:#27ae60; /* White so it shows on black header */
+  border-radius: 2px;
+}
+.bm-burger-bars-hover {
+  background: #1e8449; /* Light green hover */
+}
+
+/* Sidebar styles */
+.bm-menu {
+  background: #fff;
+  padding: 3em 1.5em 1em;
+  font-size: 1.05em;
+  box-shadow: -2px 0 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Overlay background */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Close button inside burger menu */
+.bm-close-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.bm-close-button:hover {
+  transform: rotate(90deg);
+  color: #27ae60; /* green hover for close */
+}
+
+/* Menu links */
+.menu-item {
+  display: block;
+  color: #000;
+  padding: 12px 0;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid #f2f2f2;
+  transition: all 0.2s ease;
+}
+
+.menu-item:hover {
+  color: #27ae60; /* light green */
+  padding-left: 5px;
+  background: #f9f9f9;
+}
+
+/* Submenu group */
+.menu-group {
+  margin: 1.2rem 0;
+}
+
+.menu-title {
+  display: block;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 0.4rem;
+  font-size: 1.05em;
+  border-left: 3px solid #27ae60;
+  padding-left: 8px;
+}
+
+.submenu {
+  padding-left: 18px;
+  margin-top: 0.3rem;
+  border-left: 1px dashed #ddd;
+}
+
+.submenu .menu-item {
+  font-size: 0.95em;
+  padding: 8px 0;
+  border-bottom: none;
+}
+
+.submenu .menu-item:hover {
+  color: #27ae60;
+  background: transparent;
+  padding-left: 10px;
+}
+
 
 
 

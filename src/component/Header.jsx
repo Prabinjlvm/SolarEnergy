@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { slide as Menu } from "react-burger-menu";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => setMenuOpen(false);
   return (
     <div
       id="header-sticky"
@@ -29,11 +32,10 @@ const Header = () => {
               <div className="it-header-menu it-header-dropdown">
                 <nav className="it-menu-content">
                   <ul>
-                    <li className=" p-static">
+                    <li className="p-static">
                       <Link to="/">Home</Link>
                     </li>
 
-                    {/* More Menu Items */}
                     <li className="has-dropdown">
                       <Link to="/about-us">About</Link>
                       <ul className="it-submenu submenu">
@@ -49,7 +51,7 @@ const Header = () => {
                       </ul>
                     </li>
 
-                    <li className="">
+                    <li>
                       <Link to="/">Leadership</Link>
                     </li>
 
@@ -76,7 +78,7 @@ const Header = () => {
                         </li>
                       </ul>
                     </li>
-                    <li className="">
+                    <li>
                       <Link to="/careers">Careers</Link>
                     </li>
                     <li>
@@ -116,26 +118,113 @@ const Header = () => {
                   </span>
                 </Link>
 
-                {/* Mobile Menu Toggle */}
+                {/* Mobile Burger Menu */}
                 <div className="it-header-bar d-xl-none">
-                  <button className="it-menu-bar">
-                    <span>
-                      <svg
-                        width="24"
-                        height="20"
-                        viewBox="0 0 24 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M10 18.3333C10 17.4128 10.7462 16.6667 11.6667 16.6667H21.6667C22.5872 16.6667 23.3333 17.4128 23.3333 18.3333C23.3333 19.2538 22.5872 20 21.6667 20H11.6667C10.7462 20 10 19.2538 10 18.3333ZM0 1.66667C0 0.746183 0.746183 0 1.66667 0H21.6667C22.5872 0 23.3333 0.746183 23.3333 1.66667C23.3333 2.58713 22.5872 3.33333 21.6667 3.33333H1.66667C0.746183 3.33333 0 2.58713 0 1.66667ZM0 10C0 9.07953 0.746183 8.33333 1.66667 8.33333H21.6667C22.5872 8.33333 23.3333 9.07953 23.3333 10C23.3333 10.9205 22.5872 11.6667 21.6667 11.6667H1.66667C0.746183 11.6667 0 10.9205 0 10Z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </span>
-                  </button>
+                  <Menu
+                    right
+                    isOpen={menuOpen}
+                    onStateChange={({ isOpen }) => setMenuOpen(isOpen)}
+                    customCrossIcon={false}
+                  >
+                    {/* Close Button */}
+                    <button className="bm-close-button" onClick={closeMenu}>
+                      ×
+                    </button>
+
+                    <Link className="menu-item" to="/" onClick={closeMenu}>
+                      Home
+                    </Link>
+
+                    <div className="menu-group">
+                      <span className="menu-title">About ▾</span>
+                      <div className="submenu">
+                        <Link
+                          className="menu-item"
+                          to="/aboutus"
+                          onClick={closeMenu}
+                        >
+                          About Us
+                        </Link>
+                        <Link
+                          className="menu-item"
+                          to="/visionandmission"
+                          onClick={closeMenu}
+                        >
+                          Vision & Mission
+                        </Link>
+                        <Link
+                          className="menu-item"
+                          to="/team"
+                          onClick={closeMenu}
+                        >
+                          Our Team
+                        </Link>
+                      </div>
+                    </div>
+
+                    <Link
+                      className="menu-item"
+                      to="/leadership"
+                      onClick={closeMenu}
+                    >
+                      Leadership
+                    </Link>
+
+                    <div className="menu-group">
+                      <span className="menu-title">Our Site ▾</span>
+                      <div className="submenu">
+                        <Link
+                          className="menu-item"
+                          to="/on-site"
+                          onClick={closeMenu}
+                        >
+                          On-site
+                        </Link>
+                        <Link
+                          className="menu-item"
+                          to="/off-site"
+                          onClick={closeMenu}
+                        >
+                          Off-site
+                        </Link>
+                      </div>
+                    </div>
+
+                    <div className="menu-group">
+                      <span className="menu-title">Project ▾</span>
+                      <div className="submenu">
+                        <Link
+                          className="menu-item"
+                          to="/project"
+                          onClick={closeMenu}
+                        >
+                          Project
+                        </Link>
+                        <Link
+                          className="menu-item"
+                          to="/project-details"
+                          onClick={closeMenu}
+                        >
+                          Project Details
+                        </Link>
+                      </div>
+                    </div>
+
+                    <Link
+                      className="menu-item"
+                      to="/careers"
+                      onClick={closeMenu}
+                    >
+                      Careers
+                    </Link>
+                    <Link
+                      className="menu-item"
+                      to="/contact"
+                      onClick={closeMenu}
+                    >
+                      Contact
+                    </Link>
+                  </Menu>
                 </div>
               </div>
             </div>
