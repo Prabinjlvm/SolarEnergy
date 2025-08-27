@@ -1,6 +1,5 @@
 import React from "react";
 import WindEnergySlider from "../component/WindEnergySlider";
-import AboutSection from "../component/AboutSection";
 import ServiceSection from "../component/ServiceSection";
 import CtaSection from "../component/CtaSection";
 import FaqArea from "../component/FaqArea";
@@ -40,7 +39,6 @@ export default function Home() {
 
       <main className="main-content-start">
         <WindEnergySlider />
-        <AboutSection />
         <ServiceSection />
         <CtaSection />
         <FaqArea />

@@ -192,8 +192,8 @@ const WindEnergySlider = () => {
                           <div className="row">
                             <div className="col-xl-5 col-lg-6 col-md-5">
                               <div className="it-slider-4-customer-info">
-                                <h5 className="number">50k+</h5>
-                                <span>Trusted Customer</span>
+                                <h5 className="number">3k+</h5>
+                                <span>Happy Customer</span>
                                 <div className="it-slider-4-customer-ratting">
                                   <svg
                                     width="20"
@@ -272,13 +272,16 @@ const WindEnergySlider = () => {
                                     </p>
                                   </div>
                                   <div className="it-slider-4-btn">
-                                    <Link to="/" className="it-btn-theme mr-30">
+                                    <Link
+                                      to="/services"
+                                      className="it-btn-theme mr-30"
+                                    >
                                       <span>
                                         <span className="text-1">
-                                          Learn How It Works
+                                          Explore Our Services
                                         </span>
                                         <span className="text-2">
-                                          Learn How It Works
+                                          Explore Our Services
                                         </span>
                                       </span>
                                     </Link>
@@ -411,14 +414,14 @@ const WindEnergySlider = () => {
                     <div className="col-xl-12">
                       <div className="it-slider-4-content">
                         <h1 className="it-slider-4-title">
-                          Pioneers Of Solar And Renewable Energy
+                          Clean Energy For a Sustainable World
                         </h1>
                         <div className="it-slider-4-mlr">
                           <div className="row">
                             <div className="col-xl-5 col-lg-6 col-md-5">
                               <div className="it-slider-4-customer-info">
-                                <h5 className="number">50k+</h5>
-                                <span>Trusted Customer</span>
+                                <h5 className="number">3k+</h5>
+                                <span>Happy Customer</span>
                                 <div className="it-slider-4-customer-ratting">
                                   <svg
                                     width="20"
@@ -488,22 +491,22 @@ const WindEnergySlider = () => {
                                 <div>
                                   <div className="it-slider-4-text">
                                     <p className="mb-40">
-                                      We provide innovative, efficient, and
-                                      sustainable solar energy <br />
-                                      solutions built to empower homes,
-                                      businesses, and <br />
-                                      communities towards a brighter, cleaner
-                                      future.
+                                      Solar power reduces carbon emissions and
+                                      lowers your electricity costs. Join the
+                                      movement toward greener, smarter energy.
                                     </p>
                                   </div>
                                   <div className="it-slider-4-btn">
-                                    <Link to="/" className="it-btn-theme mr-30">
+                                    <Link
+                                      to="/services"
+                                      className="it-btn-theme mr-30"
+                                    >
                                       <span>
                                         <span className="text-1">
-                                          Learn How It Works
+                                          Explore Our Services
                                         </span>
                                         <span className="text-2">
-                                          Learn How It Works
+                                          Explore Our Services
                                         </span>
                                       </span>
                                     </Link>
@@ -636,14 +639,14 @@ const WindEnergySlider = () => {
                     <div className="col-xl-12">
                       <div className="it-slider-4-content">
                         <h1 className="it-slider-4-title">
-                          Pioneers Of Solar And Renewable Energy
+                          Smart Energy For Homes & Businesses
                         </h1>
                         <div className="it-slider-4-mlr">
                           <div className="row">
                             <div className="col-xl-5 col-lg-6 col-md-5">
                               <div className="it-slider-4-customer-info">
-                                <h5 className="number">50k+</h5>
-                                <span>Trusted Customer</span>
+                                <h5 className="number">3k+</h5>
+                                <span>Happy Customer</span>
                                 <div className="it-slider-4-customer-ratting">
                                   <svg
                                     width="20"
@@ -713,22 +716,23 @@ const WindEnergySlider = () => {
                                 <div>
                                   <div className="it-slider-4-text">
                                     <p className="mb-40">
-                                      We provide innovative, efficient, and
-                                      sustainable solar energy <br />
-                                      solutions built to empower homes,
-                                      businesses, and <br />
-                                      communities towards a brighter, cleaner
-                                      future.
+                                      From residential rooftops to large
+                                      commercial projects, we deliver efficient
+                                      solar systems designed for long-term
+                                      savings.
                                     </p>
                                   </div>
                                   <div className="it-slider-4-btn">
-                                    <Link to="/" className="it-btn-theme mr-30">
+                                    <Link
+                                      to="/services"
+                                      className="it-btn-theme mr-30"
+                                    >
                                       <span>
                                         <span className="text-1">
-                                          Learn How It Works
+                                          Explore Our Services
                                         </span>
                                         <span className="text-2">
-                                          Learn How It Works
+                                          Explore Our Services
                                         </span>
                                       </span>
                                     </Link>
@@ -745,11 +749,6 @@ const WindEnergySlider = () => {
               </div>
             </div>
           </div>
-
-          {/* Add pagination elements if needed */}
-          {/* <div className="swiper-pagination"></div> */}
-          {/* <div className="swiper-button-prev"></div> */}
-          {/* <div className="swiper-button-next"></div> */}
         </div>
       </div>
     </section>

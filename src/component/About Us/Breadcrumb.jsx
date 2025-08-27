@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Breadcrumb = ({ title = "About Us - 01" }) => {
+const Breadcrumb = ({ title = "About Us" }) => {
   return (
     <div className="it-breadcrumb-area pt-40 z-index-1 fix">
       <img
@@ -47,15 +47,7 @@ const Breadcrumb = ({ title = "About Us - 01" }) => {
                       viewBox="0 0 6 9"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.728891 0L0 0.728893L3.76852 4.5L0 8.27111L0.728891 9L5.23148 4.5L0.728891 0Z"
-                        fill="currentcolor"
-                      />
-                    </svg>
-                  </span>
-                  <span>
-                    <Link to="/about-us">01</Link>
+                    ></svg>
                   </span>
                 </div>
               </div>

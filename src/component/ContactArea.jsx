@@ -9,8 +9,10 @@ const ContactArea = () => {
       <div className="it-contact-2-bg-2">
         <img src="assets/img/contact/bg-5-2.jpg" alt="" />
       </div>
+
       <div className="container">
         <div className="row">
+          {/* LEFT: Buttons (keep your original classes/animations) */}
           <div
             className="col-xl-6 col-lg-6 wow itfadeLeft"
             data-wow-duration=".9s"
@@ -24,6 +26,7 @@ const ContactArea = () => {
                   Within a Budget
                 </h4>
               </div>
+
               <div className="it-contact-2-nav-box">
                 <ul className="nav nav-tab" id="myTab" role="tablist">
                   <li className="nav-item mb-15" role="presentation">
@@ -56,15 +59,17 @@ const ContactArea = () => {
                       </span>
                     </button>
                   </li>
+
+                  {/* Point every other button to the SAME pane: #installation */}
                   <li className="nav-item mb-15" role="presentation">
                     <button
                       className="nav-link"
                       id="energy-tab"
                       data-bs-toggle="tab"
-                      data-bs-target="#energy"
+                      data-bs-target="#installation"
                       type="button"
                       role="tab"
-                      aria-controls="energy"
+                      aria-controls="installation"
                       aria-selected="false"
                     >
                       <span className="it-contact-2-nav-link">
@@ -86,15 +91,16 @@ const ContactArea = () => {
                       </span>
                     </button>
                   </li>
+
                   <li className="nav-item mb-15" role="presentation">
                     <button
                       className="nav-link"
                       id="plant-tab"
                       data-bs-toggle="tab"
-                      data-bs-target="#plant"
+                      data-bs-target="#installation"
                       type="button"
                       role="tab"
-                      aria-controls="plant"
+                      aria-controls="installation"
                       aria-selected="false"
                     >
                       <span className="it-contact-2-nav-link">
@@ -116,15 +122,16 @@ const ContactArea = () => {
                       </span>
                     </button>
                   </li>
+
                   <li className="nav-item mb-15" role="presentation">
                     <button
                       className="nav-link"
                       id="hydropower-tab"
                       data-bs-toggle="tab"
-                      data-bs-target="#hydropower"
+                      data-bs-target="#installation"
                       type="button"
                       role="tab"
-                      aria-controls="hydropower"
+                      aria-controls="installation"
                       aria-selected="false"
                     >
                       <span className="it-contact-2-nav-link">
@@ -146,15 +153,16 @@ const ContactArea = () => {
                       </span>
                     </button>
                   </li>
+
                   <li className="nav-item" role="presentation">
                     <button
                       className="nav-link"
                       id="storage-tab"
                       data-bs-toggle="tab"
-                      data-bs-target="#storage"
+                      data-bs-target="#installation"
                       type="button"
                       role="tab"
-                      aria-controls="storage"
+                      aria-controls="installation"
                       aria-selected="false"
                     >
                       <span className="it-contact-2-nav-link">
@@ -180,6 +188,8 @@ const ContactArea = () => {
               </div>
             </div>
           </div>
+
+          {/* RIGHT: Single shared tab-pane with your original card & icons */}
           <div className="col-xl-6 col-lg-6">
             <div className="it-contact-2-right">
               <div className="tab-content" id="myTabContent">
@@ -198,13 +208,15 @@ const ContactArea = () => {
                       be part of <br />
                       the changing energy system. Because Powering Progress.
                     </p>
+
                     <form action="#">
                       <div className="it-contact-input-wrap">
                         <div className="row gx-20">
+                          {/* Name */}
                           <div className="col-12 mb-20">
                             <div className="it-contact-2-input-box p-relative">
                               <input type="text" placeholder="Your Name" />
-                              <button>
+                              <button type="button">
                                 <svg
                                   width="18"
                                   height="18"
@@ -235,10 +247,12 @@ const ContactArea = () => {
                               </button>
                             </div>
                           </div>
-                          <div class="col-12 mb-20">
-                            <div class="it-contact-2-input-box p-relative">
+
+                          {/* Email */}
+                          <div className="col-12 mb-20">
+                            <div className="it-contact-2-input-box p-relative">
                               <input type="email" placeholder="Email Address" />
-                              <button>
+                              <button type="button">
                                 <svg
                                   width="18"
                                   height="18"
@@ -254,10 +268,12 @@ const ContactArea = () => {
                               </button>
                             </div>
                           </div>
-                          <div class="col-12 mb-15">
-                            <div class="it-contact-2-input-box p-relative">
+
+                          {/* Phone */}
+                          <div className="col-12 mb-15">
+                            <div className="it-contact-2-input-box p-relative">
                               <input type="text" placeholder="Phone" />
-                              <button>
+                              <button type="button">
                                 <svg
                                   width="18"
                                   height="18"
@@ -273,31 +289,37 @@ const ContactArea = () => {
                               </button>
                             </div>
                           </div>
-                          <div class="it-shop-widget mb-25">
-                            <div class="it-shop-widget-content">
-                              <div class="it-shop-widget-filter">
-                                <div class="it-shop-widget-filter-info d-flex align-items-center justify-content-between">
-                                  <span class="title">Number of panelr</span>
-                                  <span class="input-range text-end">
+
+                          {/* Range block (as-is) */}
+                          <div className="it-shop-widget mb-25">
+                            <div className="it-shop-widget-content">
+                              <div className="it-shop-widget-filter">
+                                <div className="it-shop-widget-filter-info d-flex align-items-center justify-content-between">
+                                  <span className="title">
+                                    Number of panelr
+                                  </span>
+                                  <span className="input-range text-end">
                                     <input
                                       type="text"
-                                      class="amount"
-                                      readonly
+                                      className="amount"
+                                      readOnly
                                     />
                                   </span>
                                 </div>
-                                <div class="slider-range"></div>
+                                <div className="slider-range"></div>
                               </div>
                             </div>
                           </div>
-                          <div class="it-contact-btn">
+
+                          {/* Submit */}
+                          <div className="it-contact-btn">
                             <button
                               type="submit"
-                              class="it-btn-theme black-bg w-100"
+                              className="it-btn-theme black-bg w-100"
                             >
                               <span>
-                                <span class="text-1">Submit Request</span>
-                                <span class="text-2">Submit Request</span>
+                                <span className="text-1">Submit Request</span>
+                                <span className="text-2">Submit Request</span>
                               </span>
                             </button>
                           </div>
@@ -306,94 +328,11 @@ const ContactArea = () => {
                     </form>
                   </div>
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="storage"
-                  role="tabpanel"
-                  aria-labelledby="storage-tab"
-                >
-                  <div class="it-contact-2-form-box text-center">
-                    <h4 class="it-contact-form-title text-white mb-10">
-                      Request A Quote
-                    </h4>
-                    <p class="mb-55 text-white">
-                      more people in more ways every day, so that all of us can
-                      be part of <br />
-                      the changing energy system. Because Powering Progress.
-                    </p>
-                    <form action="#">
-                      <div class="it-contact-input-wrap">
-                        <div class="row gx-20">
-                          <div class="col-12 mb-20">
-                            <div class="it-contact-2-input-box p-relative">
-                              <input type="text" placeholder="Your Name" />
-                              <button>
-                                <svg
-                                  width="18"
-                                  height="18"
-                                  viewBox="0 0 18 18"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <g clip-path="url(#clip0_819_101277)">
-                                    <path
-                                      d="M9 9C9.89002 9 10.76 8.73608 11.5001 8.24162C12.2401 7.74715 12.8169 7.04434 13.1575 6.22208C13.4981 5.39981 13.5872 4.49501 13.4135 3.6221C13.2399 2.74918 12.8113 1.94736 12.182 1.31802C11.5526 0.688685 10.7508 0.260102 9.87791 0.0864683C9.00499 -0.0871652 8.10019 0.00194979 7.27792 0.342544C6.45566 0.683138 5.75285 1.25991 5.25839 1.99994C4.76392 2.73996 4.5 3.60999 4.5 4.5C4.50119 5.69311 4.97568 6.83701 5.81934 7.68067C6.66299 8.52432 7.80689 8.99881 9 9ZM9 1.5C9.59334 1.5 10.1734 1.67595 10.6667 2.00559C11.1601 2.33524 11.5446 2.80377 11.7716 3.35195C11.9987 3.90013 12.0581 4.50333 11.9424 5.08527C11.8266 5.66722 11.5409 6.20177 11.1213 6.62132C10.7018 7.04088 10.1672 7.3266 9.58527 7.44236C9.00333 7.55811 8.40013 7.4987 7.85195 7.27164C7.30377 7.04458 6.83524 6.66006 6.50559 6.16671C6.17595 5.67337 6 5.09335 6 4.5C6 3.70435 6.31607 2.94129 6.87868 2.37868C7.44129 1.81607 8.20435 1.5 9 1.5Z"
-                                      fill="#625E58"
-                                    />
-                                    <path
-                                      d="M9 10.5C7.2104 10.502 5.49466 11.2138 4.22922 12.4792C2.96378 13.7447 2.25199 15.4604 2.25 17.25C2.25 17.4489 2.32902 17.6397 2.46967 17.7803C2.61032 17.921 2.80109 18 3 18C3.19891 18 3.38968 17.921 3.53033 17.7803C3.67098 17.6397 3.75 17.4489 3.75 17.25C3.75 15.8576 4.30312 14.5223 5.28769 13.5377C6.27226 12.5531 7.60761 12 9 12C10.3924 12 11.7277 12.5531 12.7123 13.5377C13.6969 14.5223 14.25 15.8576 14.25 17.25C14.25 17.4489 14.329 17.6397 14.4697 17.7803C14.6103 17.921 14.8011 18 15 18C15.1989 18 15.3897 17.921 15.5303 17.7803C15.671 17.6397 15.75 17.4489 15.75 17.25C15.748 15.4604 15.0362 13.7447 13.7708 12.4792C12.5053 11.2138 10.7896 10.502 9 10.5Z"
-                                      fill="#625E58"
-                                    />
-                                  </g>
-                                  <defs>
-                                    <clipPath id="clip0_819_101277">
-                                      <rect
-                                        width="18"
-                                        height="18"
-                                        fill="white"
-                                      />
-                                    </clipPath>
-                                  </defs>
-                                </svg>
-                              </button>
-                            </div>
-                          </div>
-                          <div class="it-shop-widget mb-25">
-                            <div class="it-shop-widget-content">
-                              <div class="it-shop-widget-filter">
-                                <div class="it-shop-widget-filter-info d-flex align-items-center justify-content-between">
-                                  <span class="title">Number of panelr</span>
-                                  <span class="input-range text-end">
-                                    <input
-                                      type="text"
-                                      class="amount"
-                                      readonly
-                                    />
-                                  </span>
-                                </div>
-                                <div class="slider-range"></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="it-contact-btn">
-                            <button
-                              type="submit"
-                              class="it-btn-theme black-bg w-100"
-                            >
-                              <span>
-                                <span class="text-1">Submit Request</span>
-                                <span class="text-2">Submit Request</span>
-                              </span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
+                {/* end single shared tab-pane */}
               </div>
             </div>
           </div>
+          {/* END RIGHT */}
         </div>
       </div>
     </section>

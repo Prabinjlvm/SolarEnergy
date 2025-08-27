@@ -18,10 +18,11 @@ const FaqArea = () => {
             <div className="offset-xl-5 offset-lg-5 col-xl-7 col-lg-7">
               <div className="it-faq-right">
                 <div className="it-faq-section-title-box mb-55">
-                  <span className="it-section-subtitle">why Choose us</span>
+                  <span className="it-section-subtitle">
+                    WHY STRUGA GREEN ENERGY
+                  </span>
                   <h4 className="it-section-title fz-45 text-white it-split-text it-split-in-right">
-                    Why So You Have to Have <br />
-                    use Solar Panels?
+                    Why Solar? The Benefits Speak for Themselves
                   </h4>
                 </div>
                 <div className="it-custom-accordion">
@@ -37,7 +38,7 @@ const FaqArea = () => {
                           aria-expanded="true"
                           aria-controls="collapseOne2"
                         >
-                          01 Certified Technicians
+                          Customised Financial Model
                         </button>
                       </h4>
                       <div
@@ -48,10 +49,11 @@ const FaqArea = () => {
                       >
                         <div className="accordion-body">
                           <p className="mb-0">
-                            Transform your lifestyle with renewable solar
-                            solutions that deliver savings, energy control, and
-                            long-term sustainability—crafted for your unique
-                            home and needs.
+                            Achieve maximum savings with a customised financial
+                            model designed for your needs. We create smart solar
+                            solutions that optimise costs, provide energy
+                            independence, and ensure long-term value for your
+                            home or business.
                           </p>
                         </div>
                       </div>
@@ -68,7 +70,7 @@ const FaqArea = () => {
                           aria-expanded="false"
                           aria-controls="collapseTwo3"
                         >
-                          02 Environmentally Friendly
+                          Top 3 EPC company in India
                         </button>
                       </h4>
                       <div
@@ -79,10 +81,11 @@ const FaqArea = () => {
                       >
                         <div className="accordion-body">
                           <p className="mb-0">
-                            Choose eco-friendly solar power that reduces carbon
-                            footprints, safeguards ecosystems, and delivers
-                            reliable energy—supporting a cleaner and greener
-                            tomorrow.
+                            Ranked among India’s top 3 EPC companies, we deliver
+                            reliable and efficient solar solutions. Our
+                            expertise ensures high-quality installations,
+                            optimised performance, and a sustainable energy
+                            future for every client.
                           </p>
                         </div>
                       </div>
@@ -99,7 +102,7 @@ const FaqArea = () => {
                           aria-expanded="false"
                           aria-controls="collapseFour4"
                         >
-                          03 Save 60-80% On Billis
+                          Highest in Safety Standards
                         </button>
                       </h4>
                       <div
@@ -110,10 +113,11 @@ const FaqArea = () => {
                       >
                         <div className="accordion-body">
                           <p className="mb-0">
-                            Cut your energy expenses dramatically with advanced
-                            solar solutions that let you save up to 80% on
-                            electricity costs while enjoying reliable,
-                            sustainable power every day.
+                            Our solar solutions adhere to the highest safety
+                            standards, ensuring reliable and secure energy for
+                            your home or business. Experience worry-free,
+                            sustainable power designed for long-term
+                            performance.
                           </p>
                         </div>
                       </div>
@@ -130,7 +134,7 @@ const FaqArea = () => {
                           aria-expanded="false"
                           aria-controls="collapseFour5"
                         >
-                          04 Customer Support 24/7
+                          Integrated Resourceful Teams
                         </button>
                       </h4>
                       <div
@@ -141,9 +145,41 @@ const FaqArea = () => {
                       >
                         <div className="accordion-body">
                           <p className="mb-0">
-                            Get reliable 24/7 support from our team, ensuring
-                            your solar solutions perform at their best with help
-                            whenever you need it, day or night.
+                            Our expert teams work seamlessly to provide
+                            round-the-clock support, ensuring your solar
+                            solutions operate efficiently and reliably—anytime
+                            you need assistance.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Accordion Item 5 */}
+                    <div className="accordion-items">
+                      <h4 className="accordion-header" id="headingFour5">
+                        <button
+                          className="accordion-buttons collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour5"
+                          aria-expanded="false"
+                          aria-controls="collapseFour5"
+                        >
+                          PAN India and International Exposure
+                        </button>
+                      </h4>
+                      <div
+                        id="collapseFour5"
+                        className="accordion-collapse collapse"
+                        aria-labelledby="headingFour5"
+                        data-bs-parent="#accordionExample2"
+                      >
+                        <div className="accordion-body">
+                          <p className="mb-0">
+                            We bring extensive experience across India and
+                            international markets, delivering solar solutions
+                            that meet global standards and cater to diverse
+                            energy needs.
                           </p>
                         </div>
                       </div>

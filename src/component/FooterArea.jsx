@@ -29,9 +29,14 @@ const FooterArea = () => {
                 </div>
                 <div className="it-footer-widget-text">
                   <p>
-                    Harness the power of the sun with our advanced <br />
-                    solar solutions. Sustainable, efficient, and <br />
-                    cost-effective energy for your home or business.
+                    <i className="fas fa-map-marker-alt"></i> Address: No 187,
+                    2nd Floor, Madurai Road, Aruppukottai, Tamilnadu - 626101
+                  </p>
+                  <p>
+                    <i className="fas fa-phone-alt"></i> +91-98407 57798
+                  </p>
+                  <p>
+                    <i className="fas fa-envelope"></i> contact@strujagreen.com
                   </p>
                 </div>
                 <div className="it-footer-widget-btn">

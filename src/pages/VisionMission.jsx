@@ -1,21 +1,14 @@
 import React from "react";
-import Breadcrumb from "../component/About Us/Breadcrumb";
-import FunFactArea from "../component/FunFactArea";
-import StepArea from "../component/About Us/StepArea";
-import TeamSection from "../component/About Us/TeamSection";
-import TestimonialArea from "../component/TestimonialArea";
-import ContactArea from "../component/ContactArea";
-import BrandSection from "../component/About Us/BrandSection";
-import NewsletterArea from "../component/NewsletterArea";
-import FooterArea from "../component/FooterArea";
 import Header from "../component/Header";
 import MagicCursor from "../component/MagicCursor";
 import BackToTop from "../component/BackToTop";
 import SearchPopup from "../component/SearchPopup";
 import OffcanvasMenu from "../component/OffcanvasMenu";
-import FaqArea from "../component/FaqArea";
+import FooterArea from "../component/FooterArea";
+import AboutSection from "../component/AboutSection";
+import VisionMissionBanner from "../component/VisionMission/VisionMissionBanner";
 
-export default function AboutUsV1() {
+export default function VisionMission() {
   return (
     <>
       <div id="body" className="it-magic-cursor">
@@ -48,15 +41,8 @@ export default function AboutUsV1() {
       </div>
       {/*Main*/}
       <main className="main-content-start">
-        <Breadcrumb />
-        <FaqArea />
-        <FunFactArea />
-        <StepArea />
-        <TeamSection />
-        <TestimonialArea />
-        <ContactArea />
-        <BrandSection />
-        <NewsletterArea />
+        <VisionMissionBanner />
+        <AboutSection />
       </main>
       {/* Footer */}
       <footer>

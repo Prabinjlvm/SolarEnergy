@@ -4,34 +4,49 @@ import { slide as Menu } from "react-burger-menu";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const closeMenu = () => setMenuOpen(false);
+  const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
+  const [siteDropdownOpen, setSiteDropdownOpen] = useState(false);
+  const [projectDropdownOpen, setProjectDropdownOpen] = useState(false);
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+    // Reset dropdown states when the main menu is closed
+    setAboutDropdownOpen(false);
+    setSiteDropdownOpen(false);
+    setProjectDropdownOpen(false);
+  };
+
+  const toggleAboutDropdown = () => {
+    setAboutDropdownOpen(!aboutDropdownOpen);
+  };
+
+  const toggleSiteDropdown = () => {
+    setSiteDropdownOpen(!siteDropdownOpen);
+  };
+
+  const toggleProjectDropdown = () => {
+    setProjectDropdownOpen(!projectDropdownOpen);
+  };
 
   useEffect(() => {
-    if (menuOpen) {
-      document.body.style.overflow = "hidden"; // disable scroll
-    } else {
-      document.body.style.overflow = "auto"; // enable scroll
-    }
+    document.body.style.overflow = menuOpen ? "hidden" : "auto";
   }, [menuOpen]);
+
   return (
     <div
       id="header-sticky"
-      className="it-header-area it-header-ptb it-header-style it-header-style-3 it-header-transparent"
+      className="it-header-area it-header-ptb it-header-style it-header-style-3 it-header-transparent "
     >
       <div className="container container-1650">
         <div className="p-relative">
           <div className="row align-items-center">
             {/* Logo */}
-            <div className="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-6">
+            <div className="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-6 ">
               <div className="it-header-logo">
-                <Link to="/">
-                  <img src="assets/img/logo/logo-white3.png" alt="logo" />
-                </Link>
+                <Link to="/">Struja Green Energy</Link>
               </div>
               <div className="it-header-logo-3 d-none">
-                <Link to="/">
-                  <img src="assets/img/logo/logo-black.png" alt="logo" />
-                </Link>
+                <Link to="/">Struja Green Energy</Link>
               </div>
             </div>
 
@@ -53,10 +68,13 @@ const Header = () => {
                           <Link to="/about-us">About Us</Link>
                         </li>
                         <li>
-                          <Link to="/">Vision & Mission</Link>
+                          <Link to="/vision-mission">Vision & Mission</Link>
                         </li>
                         <li>
-                          <Link to="/">Our Team</Link>
+                          <Link to="/our-team">Our Team</Link>
+                        </li>
+                        <li>
+                          <Link to="/milestone">Milestone</Link>
                         </li>
                       </ul>
                     </li>
@@ -80,15 +98,12 @@ const Header = () => {
                     </li>
 
                     <li className="has-dropdown">
-                      <Link to="/">Project</Link>
+                      <Link to="/" onClick={(e) => e.preventDefault()}>
+                        Project
+                      </Link>
                       <ul className="it-submenu submenu">
                         <li>
-                          <Link
-                            to="/project"
-                            onClick={(e) => e.preventDefault()}
-                          >
-                            Project
-                          </Link>
+                          <Link to="/project">Project</Link>
                         </li>
                         <li>
                           <Link to="/project-details">Project Details</Link>
@@ -110,7 +125,7 @@ const Header = () => {
             <div className="col-xxl-3 col-xl-2 col-lg-6 col-md-6 col-6">
               <div className="it-header-right-action d-flex justify-content-end align-items-center">
                 {/* Search */}
-                <div className="it-header-search d-none d-xxl-block">
+                {/* <div className="it-header-search d-none d-xxl-block">
                   <button className="search-box-outer">
                     <svg
                       width="19"
@@ -125,7 +140,7 @@ const Header = () => {
                       />
                     </svg>
                   </button>
-                </div>
+                </div> */}
 
                 {/* CTA Button */}
                 <Link to="/contact" className="it-btn-theme d-none d-md-flex">
@@ -142,19 +157,40 @@ const Header = () => {
                     isOpen={menuOpen}
                     onStateChange={({ isOpen }) => setMenuOpen(isOpen)}
                     customCrossIcon={false}
+                    overlayClassName="bm-overlay-custom"
                   >
                     {/* Close Button */}
                     <button className="bm-close-button" onClick={closeMenu}>
                       ×
                     </button>
+                    {/* Logo inside Burger Menu */}
+
+                    <div className="bm-logo-container">
+                      <Link to="/" onClick={closeMenu}>
+                        Struja Green Energy
+                      </Link>
+                    </div>
 
                     <Link className="menu-item" to="/" onClick={closeMenu}>
                       Home
                     </Link>
 
                     <div className="menu-group">
-                      <span className="menu-title">About ▾</span>
-                      <div className="submenu">
+                      {/* Dropdown Toggle */}
+                      <span
+                        className="menu-title"
+                        onClick={toggleAboutDropdown}
+                        style={{ cursor: "pointer" }} // Added for better UX
+                      >
+                        About {aboutDropdownOpen ? "▴" : "▾"}{" "}
+                        {/* Arrow indicator */}
+                      </span>
+                      <div
+                        className="submenu"
+                        style={{
+                          display: aboutDropdownOpen ? "block" : "none",
+                        }}
+                      >
                         <Link
                           className="menu-item"
                           to="/about-us"
@@ -164,17 +200,25 @@ const Header = () => {
                         </Link>
                         <Link
                           className="menu-item"
-                          to="/visionandmission"
+                          to="/vision-mission"
                           onClick={closeMenu}
                         >
                           Vision & Mission
                         </Link>
                         <Link
                           className="menu-item"
-                          to="/team"
+                          to="/our-team"
                           onClick={closeMenu}
                         >
                           Our Team
+                        </Link>
+                        {/* Added Milestone to match desktop menu */}
+                        <Link
+                          className="menu-item"
+                          to="/milestone"
+                          onClick={closeMenu}
+                        >
+                          Milestone
                         </Link>
                       </div>
                     </div>
@@ -188,8 +232,19 @@ const Header = () => {
                     </Link>
 
                     <div className="menu-group">
-                      <span className="menu-title">Our Site ▾</span>
-                      <div className="submenu">
+                      {/* Dropdown Toggle */}
+                      <span
+                        className="menu-title"
+                        onClick={toggleSiteDropdown}
+                        style={{ cursor: "pointer" }} // Added for better UX
+                      >
+                        Our Site {siteDropdownOpen ? "▴" : "▾"}{" "}
+                        {/* Arrow indicator */}
+                      </span>
+                      <div
+                        className="submenu"
+                        style={{ display: siteDropdownOpen ? "block" : "none" }}
+                      >
                         <Link
                           className="menu-item"
                           to="/on-site"
@@ -208,8 +263,21 @@ const Header = () => {
                     </div>
 
                     <div className="menu-group">
-                      <span className="menu-title">Project ▾</span>
-                      <div className="submenu">
+                      {/* Dropdown Toggle */}
+                      <span
+                        className="menu-title"
+                        onClick={toggleProjectDropdown}
+                        style={{ cursor: "pointer" }} // Added for better UX
+                      >
+                        Project {projectDropdownOpen ? "▴" : "▾"}{" "}
+                        {/* Arrow indicator */}
+                      </span>
+                      <div
+                        className="submenu"
+                        style={{
+                          display: projectDropdownOpen ? "block" : "none",
+                        }}
+                      >
                         <Link
                           className="menu-item"
                           to="/project"
