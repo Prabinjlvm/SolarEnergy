@@ -35,7 +35,7 @@ export default function Home() {
           {/* header-area-end */}
         </header>
       </div>
-      <div className="it-header-spacing"></div>
+      {/* <div className="it-header-spacing"></div> */}
 
       <main className="main-content-start">
         <WindEnergySlider />
