@@ -9,6 +9,12 @@ import ContactPage from './pages/ContactPage';
 import Career from './pages/Career';
 import ServiceDetails from './component/ServiceDetails';
 import VisionMission from './pages/VisionMission';
+import OurTeam from './pages/OurTeam';
+import OurOnSite from './pages/OurOnSite';
+import Leadership from './pages/LeaderShip';
+import Milestone from './pages/Milestone';
+import OffSiteSolution from './pages/OffSiteSolution';
+
 
 function App() {
   return (
@@ -24,6 +30,12 @@ function App() {
      <Route path="/careers" element={<Career />} />
      <Route path="/services" element={<ServiceDetails />} />
      <Route path="/vision-mission" element={<VisionMission />} />
+     <Route path='/our-team' element={<OurTeam />} />
+     <Route path='/onsite' element={<OurOnSite />} />
+     <Route path='/leadership' element={<Leadership />} />
+     <Route path="/milestone" element={<Milestone />} />
+     <Route path="/offsite" element={<OffSiteSolution />} />
+
     </Routes>
     </>
    

@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../component/Header";
 import NewsletterArea from "../component/NewsletterArea";
 import FooterArea from "../component/FooterArea";
-import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -31,7 +30,7 @@ const Contact = () => {
                   <div className="it-breadcrumb-list-wrap">
                     <div className="it-breadcrumb-list">
                       <span>
-                        <Link to="/">Home</Link>
+                        <a href="/">Home</a>
                       </span>
                       <span className="dvdr">
                         <svg width="6" height="9" viewBox="0 0 6 9" fill="none">
@@ -82,9 +81,9 @@ const Contact = () => {
                       <div className="it-contact-list">
                         <span>Phone Line</span>
                         <p>Make a call for your general enquiries.</p>
-                        <Link className="border-line" to="tel:+000123456789">
+                        <a className="border-line" href="tel:+000123456789">
                           (+000) 123 456 789
-                        </Link>
+                        </a>
                       </div>
                     </div>
 
@@ -99,12 +98,12 @@ const Contact = () => {
                       <div className="it-contact-list">
                         <span>Email</span>
                         <p>Send your mail for general enquiries.</p>
-                        <Link
+                        <a
                           className="border-line"
-                          to="mailto:Rooft@example.com"
+                          href="mailto:Rooft@example.com"
                         >
                           Rooft@example.com
-                        </Link>
+                        </a>
                       </div>
                     </div>
 
@@ -119,9 +118,9 @@ const Contact = () => {
                       <div className="it-contact-list">
                         <span>Our Location</span>
                         <p>View location for staying guests.</p>
-                        <Link className="border-line" to="tel:+000123456789">
+                        <a className="border-line" href="tel:+000123456789">
                           927 Nancy Street Gar, New York,
-                        </Link>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -211,7 +210,7 @@ const Contact = () => {
                   }}
                 >
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d456184.5056356658!2d71.34513870507091!3d26.714317398338892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1724579991300!5m2!1sen!2sbd"
+                    src="https://www.google.com/maps?q=9.519414,78.095872&z=15&output=embed"
                     title="Google Map"
                     style={{
                       border: 0,

@@ -5,11 +5,17 @@ import BackToTop from "../component/BackToTop";
 import SearchPopup from "../component/SearchPopup";
 import OffcanvasMenu from "../component/OffcanvasMenu";
 import FooterArea from "../component/FooterArea";
-import AboutSection from "../component/AboutSection";
-import NewsletterArea from "../component/NewsletterArea";
 import { Link } from "react-router-dom";
+import NewsletterArea from "../component/NewsletterArea";
 
-export default function VisionMission() {
+export default function Milestone() {
+  const milestones = [
+    { year: 2023, text: "Incorporated 1 MW rooftop", color: "#41516C" },
+    { year: 2024, text: "Thiruvarur District 15 MW", color: "#FBCA3E" },
+    { year: 2025, text: "Pudhukottai District 15 MW", color: "#E24A68" },
+    { year: 2025, text: "Thiruvallur District 50 MW", color: "#1B5F8C" },
+    { year: 2026, text: "Proposed 200 MW", color: "#4CADAD" },
+  ];
   return (
     <>
       <div id="body" className="it-magic-cursor">
@@ -31,16 +37,16 @@ export default function VisionMission() {
         </header>
       </div>
 
-      {/* Main */}
+      {/*Main*/}
       <main className="main-content-start">
-        {/*Breadcrumb*/}
+        {/*Breadcrumb */}
         <div
           className="it-breadcrumb-area pt-40 z-index-1 fix mt-80"
           style={{
-            backgroundImage: "url('assets/img/about/SolarHome-2.jpg')",
+            backgroundImage: "url('assets/img/about/SolarHome-3.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            height: "300px",
+            height: "300px", // 🔹 set the height you want
             display: "flex",
             alignItems: "center",
           }}
@@ -51,7 +57,7 @@ export default function VisionMission() {
                 <div className="it-breadcrumb-content">
                   <div className="it-breadcrumb-title-box">
                     <h3 className="it-breadcrumb-title it-split-text it-split-in-right text-white">
-                      Vision & Mission
+                      Milestone
                     </h3>
                   </div>
                   <div className="it-breadcrumb-list-wrap">
@@ -65,7 +71,7 @@ export default function VisionMission() {
                       </span>
                       <span className="dvdr"> {">"} </span>
                       <span>
-                        <Link to="/vision-mission">Vision & Mission</Link>
+                        <Link to="/milestone">Milestone</Link>
                       </span>
                     </div>
                   </div>
@@ -75,8 +81,27 @@ export default function VisionMission() {
           </div>
         </div>
 
-        {/* About Section */}
-        <AboutSection />
+        {/* Timeline */}
+        <div className="timeline">
+          <div className="timeline-line"></div>
+          {milestones.map((item, index) => (
+            <div
+              key={index}
+              className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}
+            >
+              {/* <div className="timeline-dot" style={{ backgroundColor: item.color }}></div> */}
+              <div
+                className="timeline-card"
+                style={{ backgroundColor: item.color }}
+              >
+                <div className="timeline-year">
+                  <h3 className="text-white">{item.year}</h3>
+                </div>
+                <div className="timeline-title">{item.text}</div>
+              </div>
+            </div>
+          ))}
+        </div>
 
         {/* Newsletter */}
         <NewsletterArea />
