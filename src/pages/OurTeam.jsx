@@ -141,25 +141,25 @@ export default function OurTeam() {
                         alt={member.name}
                       />
                       <div className="it-team-social">
-                        <a href="#">
+                        <Link to="/">
                           <i className="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="/">
                           <i className="fab fa-twitter"></i>
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="/">
                           <i className="fab fa-instagram"></i>
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="/">
                           <i className="fab fa-linkedin-in"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="it-team-content">
                       <h4 className="it-team-title">
-                        <a className="border-line" href="#">
+                        <Link className="border-line" to="/">
                           {member.name}
-                        </a>
+                        </Link>
                       </h4>
                       <span>{member.role}</span>
                     </div>
@@ -175,26 +175,26 @@ export default function OurTeam() {
                   <nav>
                     <ul>
                       <li>
-                        <a href="#">
+                        <Link to="/">
                           <i className="fa-regular fa-arrow-left"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">1</a>
+                        <Link to="/">1</Link>
                       </li>
                       <li className="current">
-                        <a href="#">2</a>
+                        <Link to="/">2</Link>
                       </li>
                       <li>
-                        <a href="#">3</a>
+                        <Link to="/">3</Link>
                       </li>
                       <li>
-                        <a href="#">4</a>
+                        <Link to="/">4</Link>
                       </li>
                       <li>
-                        <a href="#">
+                        <Link to="/">
                           <i className="fa-regular fa-arrow-right"></i>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </nav>

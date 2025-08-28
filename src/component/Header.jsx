@@ -1,5 +1,5 @@
 // ../component/Header.js
-import React, { useState, useEffect, useRef, forwardRef } from "react"; // Import forwardRef
+import React, { useState, useEffect, forwardRef } from "react"; // Import forwardRef
 import { Link } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
 
