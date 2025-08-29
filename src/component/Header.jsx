@@ -170,6 +170,7 @@ const Header = forwardRef((props, ref) => {
                     onStateChange={({ isOpen }) => setMenuOpen(isOpen)}
                     customCrossIcon={false}
                     overlayClassName="bm-overlay-custom"
+                    onOverlayClick={closeMenu}
                   >
                     {/* Close Button */}
                     <button className="bm-close-button" onClick={closeMenu}>
@@ -177,7 +178,10 @@ const Header = forwardRef((props, ref) => {
                     </button>
                     {/* Logo inside Burger Menu */}
 
-                    <div className="bm-logo-container">
+                    <div
+                      className="bm-logo-container"
+                      style={{ textAlign: "left" }}
+                    >
                       <Link to="/" onClick={closeMenu}>
                         Struja Green Energy
                       </Link>
