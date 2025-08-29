@@ -320,7 +320,7 @@ const ProjectDetails = () => {
                 <div className="col-xl-6 col-lg-6">
                   <div className="it-step-top-content-wrap d-flex justify-content-lg-end">
                     <div className="it-step-top-content gray-bg3 d-inline-flex align-items-center">
-                      <h5>6k+</h5>
+                      <h5>4k+</h5>
                       <p>
                         Successfully Completed <br /> Business Project
                       </p>

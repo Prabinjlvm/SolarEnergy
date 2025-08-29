@@ -10,12 +10,38 @@ import NewsletterArea from "../component/NewsletterArea";
 
 export default function Milestone() {
   const milestones = [
-    { year: 2023, text: "Incorporated 1 MW rooftop", color: "#41516C" },
-    { year: 2024, text: "Thiruvarur District 15 MW", color: "#FBCA3E" },
-    { year: 2025, text: "Pudhukottai District 15 MW", color: "#E24A68" },
-    { year: 2025, text: "Thiruvallur District 50 MW", color: "#1B5F8C" },
-    { year: 2026, text: "Proposed 200 MW", color: "#4CADAD" },
+    {
+      year: "2023",
+      text: "Incorporated 1 MW rooftop",
+      details: "Rooftop solar commissioned in Chennai",
+      color: "#41516C",
+    },
+    {
+      year: "2024",
+      text: "Thiruvarur District 15 MW",
+      details: "Large-scale solar farm for 20,000 homes",
+      color: "#FBCA3E",
+    },
+    {
+      year: "2025",
+      text: "Pudhukottai District 15 MW",
+      details: "Eco-friendly tracking panel setup",
+      color: "#E24A68",
+    },
+    {
+      year: "2025",
+      text: "Thiruvallur District 50 MW",
+      details: "Major renewable energy hub",
+      color: "#1B5F8C",
+    },
+    {
+      year: "2026",
+      text: "Proposed 200 MW",
+      details: "Future expansion for carbon neutrality",
+      color: "#4CADAD",
+    },
   ];
+
   return (
     <>
       <div id="body" className="it-magic-cursor">
@@ -82,25 +108,42 @@ export default function Milestone() {
         </div>
 
         {/* Timeline */}
-        <div className="timeline">
-          <div className="timeline-line"></div>
-          {milestones.map((item, index) => (
-            <div
-              key={index}
-              className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}
-            >
-              {/* <div className="timeline-dot" style={{ backgroundColor: item.color }}></div> */}
+        <div className="timeline-container">
+          {/* Left Column - Details */}
+          <div className="timeline-left">
+            {milestones.map((item, index) => (
               <div
-                className="timeline-card"
-                style={{ backgroundColor: item.color }}
+                key={index}
+                className="detail-card mb-5 mt-4"
+                style={{
+                  "--accent-color": item.color,
+                  backgroundColor: item.color,
+                }}
               >
-                <div className="timeline-year">
-                  <h3 className="text-white">{item.year}</h3>
-                </div>
-                <div className="timeline-title">{item.text}</div>
+                <h3>{item.year}</h3>
+                <p>{item.details}</p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          {/* Right Column - Timeline */}
+          <div className="timeline">
+            <div className="timeline-line"></div>
+            {milestones.map((item, index) => (
+              <div
+                key={index}
+                className={`timeline-item ${
+                  index % 2 === 0 ? "left" : "right"
+                }`}
+                style={{ "--accent-color": item.color }}
+              >
+                <div className="timeline-card">
+                  <div className="timeline-year">{item.year}</div>
+                  <div className="timeline-title">{item.text}</div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Newsletter */}

@@ -76,13 +76,18 @@ const Contact = () => {
                       data-wow-delay=".3s"
                     >
                       <div className="it-contact-list-icon">
-                        <span></span>
+                        <span>
+                          <i
+                            className="fas fa-phone"
+                            style={{ fontSize: "32px", color: "#2DC457" }}
+                          ></i>
+                        </span>
                       </div>
                       <div className="it-contact-list">
                         <span>Phone Line</span>
                         <p>Make a call for your general enquiries.</p>
                         <a className="border-line" href="tel:+000123456789">
-                          (+000) 123 456 789
+                          +91-98407 57798
                         </a>
                       </div>
                     </div>
@@ -93,7 +98,12 @@ const Contact = () => {
                       data-wow-delay=".5s"
                     >
                       <div className="it-contact-list-icon">
-                        <span></span>
+                        <span>
+                          <i
+                            className="fas fa-envelope"
+                            style={{ fontSize: "32px", color: "#2DC457" }}
+                          ></i>
+                        </span>
                       </div>
                       <div className="it-contact-list">
                         <span>Email</span>
@@ -102,7 +112,7 @@ const Contact = () => {
                           className="border-line"
                           href="mailto:Rooft@example.com"
                         >
-                          Rooft@example.com
+                          contact@strujagreen.com
                         </a>
                       </div>
                     </div>
@@ -113,13 +123,20 @@ const Contact = () => {
                       data-wow-delay=".7s"
                     >
                       <div className="it-contact-list-icon">
-                        <span></span>
+                        <span>
+                          {" "}
+                          <i
+                            className="fas fa-map-marker-alt"
+                            style={{ fontSize: "32px", color: "#2DC457" }}
+                          ></i>
+                        </span>
                       </div>
                       <div className="it-contact-list">
                         <span>Our Location</span>
                         <p>View location for staying guests.</p>
                         <a className="border-line" href="tel:+000123456789">
-                          927 Nancy Street Gar, New York,
+                          No 187,2nd floor Madurai
+                          Road,Aruppukottai,Tamilnadu-626101
                         </a>
                       </div>
                     </div>

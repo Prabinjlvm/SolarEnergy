@@ -26,7 +26,7 @@ const ServiceArea = () => {
                     solutions that put you in control, lower costs, and <br />
                     support a cleaner, brighter future.
                   </p>
-                  <Link to="/" className="it-btn-theme">
+                  <Link to="/services" className="it-btn-theme">
                     <span>
                       <span className="text-1">View All Services</span>
                       <span className="text-2">View All Services</span>

@@ -117,7 +117,7 @@ const Career = () => {
                         <span key={i}>{tag}</span>
                       ))}
                     </div>
-                    <button className="arrow border-line">
+                    <Link to={`/contact`} className="arrow border-line">
                       Apply
                       <svg
                         width="13"
@@ -131,7 +131,7 @@ const Career = () => {
                           fill="#2DC457"
                         />
                       </svg>
-                    </button>
+                    </Link>
                   </div>
                 </div>
               ))}

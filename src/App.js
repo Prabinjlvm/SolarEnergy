@@ -14,6 +14,7 @@ import OurOnSite from './pages/OurOnSite';
 import Leadership from './pages/LeaderShip';
 import Milestone from './pages/Milestone';
 import OffSiteSolution from './pages/OffSiteSolution';
+import Blog from './pages/Blog';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
      <Route path='/leadership' element={<Leadership />} />
      <Route path="/milestone" element={<Milestone />} />
      <Route path="/offsite" element={<OffSiteSolution />} />
+     <Route path="/blog" element={<Blog />} />
 
     </Routes>
     </>

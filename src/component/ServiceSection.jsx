@@ -24,7 +24,7 @@ const ServiceSection = () => {
                       Empower your lifestyle with smart, sustainable energy{" "}
                       <br /> solutions that give you control, reduce bills,
                     </p>
-                    <Link to="/" className="it-btn-theme">
+                    <Link to="/services" className="it-btn-theme">
                       <span>
                         <span className="text-1">View All Services</span>
                         <span className="text-2">View All Services</span>
@@ -60,7 +60,7 @@ const ServiceSection = () => {
                     on electricity costs, and contribute to a cleaner
                     environment.
                   </p>
-                  <Link className="it-service-4-link" to="/">
+                  <Link className="it-service-4-link" to="/project">
                     <span>
                       <span className="text-1">
                         Explore More
@@ -117,7 +117,7 @@ const ServiceSection = () => {
                     operating expenses, and promote a sustainable future
                     responsibly.
                   </p>
-                  <Link className="it-service-4-link" to="/">
+                  <Link className="it-service-4-link" to="/project">
                     <span>
                       <span className="text-1">Explore More</span>
                       <span className="text-2">Explore More</span>
@@ -146,7 +146,7 @@ const ServiceSection = () => {
                     energy security, and drive the transition toward a greener
                     future.
                   </p>
-                  <Link className="it-service-4-link" to="/">
+                  <Link className="it-service-4-link" to="/project">
                     <span>
                       <span className="text-1">Explore More</span>
                       <span className="text-2">Explore More</span>

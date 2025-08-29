@@ -46,10 +46,30 @@ const Header = forwardRef((props, ref) => {
             {/* Logo */}
             <div className="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-6 ">
               <div className="it-header-logo">
-                <Link to="/">Struja Green Energy</Link>
+                <Link
+                  to="/"
+                  style={{
+                    color: "#2ecc71", // eco-friendly green
+                    fontWeight: "bold",
+                    fontSize: "22px",
+                    textShadow: "0px 0px 5px rgba(0,0,0,0.3)", // subtle glow
+                  }}
+                >
+                  Struja Green Energy
+                </Link>
               </div>
               <div className="it-header-logo-3 d-none">
-                <Link to="/">Struja Green Energy</Link>
+                <Link
+                  to="/"
+                  style={{
+                    color: "#2ecc71",
+                    fontWeight: "bold",
+                    fontSize: "22px",
+                    textShadow: "0px 0px 5px rgba(0,0,0,0.3)",
+                  }}
+                >
+                  Struja Green Energy
+                </Link>
               </div>
             </div>
 
@@ -79,11 +99,14 @@ const Header = forwardRef((props, ref) => {
                         <li>
                           <Link to="/milestone">Milestone</Link>
                         </li>
+                        <li>
+                          <Link to="/leadership">Leadership</Link>
+                        </li>
                       </ul>
                     </li>
 
                     <li>
-                      <Link to="/leadership">Leadership</Link>
+                      <Link to="/services">Service</Link>
                     </li>
 
                     <li className="has-dropdown">
@@ -112,6 +135,9 @@ const Header = forwardRef((props, ref) => {
                           <Link to="/project-details">Project Details</Link>
                         </li>
                       </ul>
+                    </li>
+                    <li>
+                      <Link to="/blog">Blog</Link>
                     </li>
                     <li>
                       <Link to="/careers">Careers</Link>
@@ -203,15 +229,22 @@ const Header = forwardRef((props, ref) => {
                         >
                           Milestone
                         </Link>
+                        <Link
+                          className="menu-item"
+                          to="/leadership"
+                          onClick={closeMenu}
+                        >
+                          Leadership
+                        </Link>
                       </div>
                     </div>
 
                     <Link
                       className="menu-item"
-                      to="/leadership"
+                      to="/services"
                       onClick={closeMenu}
                     >
-                      Leadership
+                      Service
                     </Link>
 
                     <div className="menu-group">
@@ -273,7 +306,9 @@ const Header = forwardRef((props, ref) => {
                         </Link>
                       </div>
                     </div>
-
+                    <Link className="menu-item" to="/blog" onClick={closeMenu}>
+                      Blog
+                    </Link>
                     <Link
                       className="menu-item"
                       to="/careers"

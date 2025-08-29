@@ -146,7 +146,7 @@ const BlogArea = () => {
             data-wow-delay=".9s"
           >
             <div className="it-service-btn text-center mt-30">
-              <Link to="/" className="it-btn-theme">
+              <Link to="/blog" className="it-btn-theme">
                 <span>
                   <span className="text-1">View All News</span>
                   <span className="text-2">View All News</span>

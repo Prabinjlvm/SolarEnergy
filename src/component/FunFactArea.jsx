@@ -31,12 +31,12 @@ const FunFactArea = () => {
                   sustainable future.
                 </p>
               </div>
-              <Link to="/" className="it-btn-theme">
+              {/* <Link to="/" className="it-btn-theme">
                 <span>
                   <span className="text-1">Get Clean Energy</span>
                   <span className="text-2">Get Clean Energy</span>
                 </span>
-              </Link>
+              </Link> */}
             </div>
           </div>
 

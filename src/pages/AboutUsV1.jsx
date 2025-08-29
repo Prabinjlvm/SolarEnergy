@@ -2,7 +2,6 @@ import React from "react";
 import Breadcrumb from "../component/About Us/Breadcrumb";
 import FunFactArea from "../component/FunFactArea";
 import StepArea from "../component/About Us/StepArea";
-import TeamSection from "../component/About Us/TeamSection";
 import TestimonialArea from "../component/TestimonialArea";
 import ContactArea from "../component/ContactArea";
 import BrandSection from "../component/About Us/BrandSection";
@@ -52,7 +51,6 @@ export default function AboutUsV1() {
         <FaqArea />
         <FunFactArea />
         <StepArea />
-        <TeamSection />
         <TestimonialArea />
         <ContactArea />
         <BrandSection />

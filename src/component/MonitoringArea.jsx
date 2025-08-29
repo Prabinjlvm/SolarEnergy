@@ -97,7 +97,7 @@ const MonitoringArea = () => {
 
               {/* Contact Button */}
               <div className="it-about-btn d-sm-flex align-items-center">
-                <Link to="/" className="it-btn-theme mr-30">
+                <Link to="/contact" className="it-btn-theme mr-30">
                   <span>
                     <span className="text-1">Contact Us</span>
                     <span className="text-2">Contact Us</span>
@@ -133,7 +133,7 @@ const MonitoringArea = () => {
                     </svg>
                   </span>
                   <Link className="border-line text-black" to="/">
-                    +(415) 555‑0132
+                    +91-98407 57798
                   </Link>
                 </div>
               </div>

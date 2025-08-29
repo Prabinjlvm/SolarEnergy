@@ -17,7 +17,7 @@ const StepArea = () => {
             <div className="col-xl-6 col-lg-6">
               <div className="it-step-top-content-wrap d-flex justify-content-lg-end">
                 <div className="it-step-top-content gray-bg3 d-inline-flex align-items-center">
-                  <h5>6k+</h5>
+                  <h5>4k+</h5>
                   <p>
                     Successfully Completed <br /> Business Project
                   </p>
@@ -46,7 +46,8 @@ const StepArea = () => {
                       fill="currentColor"
                       viewBox="0 0 16 16"
                     >
-                      <path d="M8 0a8 8 0 1 0 8 8A8.011 8.011 0 0 0 8 0zM4.285 12.433l-.823-.824 4.24-4.242L12 10.586l-.823.824-2.651-2.652z" />
+                      <path d="M8 1a7 7 0 1 1-6.364 4h1.287A6 6 0 1 0 8 2z" />
+                      <path d="M7 4h2v5H7zM7 10h2v2H7z" />
                     </svg>
                   </span>
                 </div>
